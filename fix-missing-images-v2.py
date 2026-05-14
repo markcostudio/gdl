@@ -10,7 +10,14 @@ patterns = [
     re.compile(r'/gdl/web\.archive\.org/web/([0-9]+im_)/https%253A/([^"\'\s)]+?\.(?:png|jpg|jpeg|gif|webp|svg))', re.I),
 ]
 
-files = list(ROOT.rglob("*.html")) + list(ROOT.rglob("*.css")) + list(ROOT.rglob("*.js"))
+files = [
+    p for p in (
+        list(ROOT.rglob("*.html")) +
+        list(ROOT.rglob("*.css")) +
+        list(ROOT.rglob("*.js"))
+    )
+    if p.is_file()
+]
 
 found = 0
 downloaded = 0
