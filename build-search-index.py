@@ -22,7 +22,7 @@ for html in ROOT.rglob("index.html"):
 
     content = re.sub(r"\s+", " ", content)
 
-    url = BASE + html.as_posix()
+    url = BASE + html.as_posix().replace("https%3A", "https%253A")
 
     pages.append({
         "title": title,
