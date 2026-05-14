@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Search GDL Reference Guide</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; max-width: 900px; }
+    input { width: 100%; padding: 12px; font-size: 18px; }
+    .result { margin: 24px 0; }
+    .result a { font-size: 20px; font-weight: bold; }
+    .snippet { color: #555; margin-top: 6px; line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <h1>Search GDL Reference Guide</h1>
+  <input id="q" placeholder="Search GDL commands, functions, keywords..." autofocus>
+  <div id="results"></div>
+
+  <script>
+    let pages = [];
+
+    fetch('/gdl/search-index.json')
+      .then(r => r.json())
+      .then(data => {
+        pages = data;
+        const params = new URLSearchParams(location.search);
+        const q = params.get('q') || '';
+        document.getElementById('q').value = q;
+        if (q) search(q);
+      });
+
+    document.getElementById('q').addEventListener('input', e => {
+      search(e.target.value);
+    });
+
+    function search(query) {
+      query = query.toLowerCase().trim();
+      const out = document.getElementById('results');
+
+      if (!query) {
+        out.innerHTML = '';
+        return;
+      }
+
+      const terms = query.split(/\s+/);
+
+      const results = pages.map(page => {
+        const text = page.text.toLowerCase();
+        let score = 0;
+
+        for (const term of terms) {
+          if (page.title.toLowerCase().includes(term)) score += 10;
+          const matches = text.match(new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'));
+          if (matches) score += matches.length;
+        }
+
+        return { ...page, score };
+      })
+      .filter(p => p.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 30);
+
+      out.innerHTML = results.map(r => {
+        const i = r.text.toLowerCase().indexOf(terms[0]);
+        const snippet = i >= 0
+          ? r.text.slice(Math.max(0, i - 120), i + 280)
+          : r.text.slice(0, 300);
+
+        return `
+          <div class="result">
+            <a href="${r.url}">${r.title}</a>
+            <div class="snippet">${snippet}...</div>
+          </div>
+        `;
+      }).join('');
+    }
+  </script>
+</body>
+</html>
