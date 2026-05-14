@@ -96,7 +96,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/web.archive.org\/web\/2025061804
 <script type="text/javascript" src="/gdl/web.archive.org/web/20250518184039js_/https%253A/gdl.graphisoft.com/wp-content/themes/graphisoft-dev-theme/assets/highlight.js/highlight.min.js?ver=9.9.0-acapi" id="highlightjs-js"></script>
 <link rel="https://api.w.org/" href="https://gdl.graphisoft.com/wp-json/"/><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://gdl.graphisoft.com/xmlrpc.php?rsd"/>
 <link rel="canonical" href="index.html"/>
-<link rel="shortlink" href="https://web.archive.org/web/20250618044315/https://gdl.graphisoft.com/?p=885"/>
+<link rel="shortlink" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/gdl-xml-extension//"/>
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://web.archive.org/web/20250618044315/https://gdl.graphisoft.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgdl.graphisoft.com%2Freference-guide%2Ffile-operations%2F"/>
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://web.archive.org/web/20250618044315/https://gdl.graphisoft.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgdl.graphisoft.com%2Freference-guide%2Ffile-operations%2F&amp;format=xml"/>
 
@@ -338,14 +338,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/web.archive.org\/web\/2025061804
 		<p><a name="FileOperations_section"></a><br/>
 The following keywords allow you to open external files for reading/writing<br/>
 and to manipulate them by putting/getting values from/to GDL scripts. This process necessarily involves using special Add-On extensions.<br/>
-Text files can be handled by <a class="xref" title="GDL Text I/O Add-On" href="https://web.archive.org/web/20250618044315/https://gdl.graphisoft.com/?p=901#GDLTextIOAdd-On_section">the section called “GDL Text I/O Add-On”</a>. Add-Ons for other file types can be developed by third parties.</p>
-<p><span class="italic">See also <a class="xref" title="GDL Text I/O Add-On" href="https://web.archive.org/web/20250618044315/https://gdl.graphisoft.com/?p=901#GDLTextIOAdd-On_section">the section called “GDL Text I/O Add-On”</a>.</span></p>
+Text files can be handled by <a class="xref" title="GDL Text I/O Add-On" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/gdl-text-io-add-on//#GDLTextIOAdd-On_section">the section called “GDL Text I/O Add-On”</a>. Add-Ons for other file types can be developed by third parties.</p>
+<p><span class="italic">See also <a class="xref" title="GDL Text I/O Add-On" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/gdl-text-io-add-on//#GDLTextIOAdd-On_section">the section called “GDL Text I/O Add-On”</a>.</span></p>
 <h3 id="OPEN_gdlcommand">OPEN</h3>
 <pre class="programlisting"><b id="OPEN_keyword_2.14.7.4.4.1">OPEN</b> (filter, filename, parameter_string)</pre>
 <p>Opens a file as directed. Its return value is a positive integer that will identify the specific file, -2 if the add-on is missing, -1 if the file is missing.<br/>
 If positive, this value, the channel number, will be the file’s reference number in succeeding instances.<br/>
 To include the referenced file in the archive project,<br/>
-use <a class="xref" href="https://web.archive.org/web/20250618044315/https://gdl.graphisoft.com/?p=869#FILE_DEPENDENCE_gdlcommand">the FILE_DEPENDENCE command</a> with the file name.</p>
+use <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#FILE_DEPENDENCE_gdlcommand">the FILE_DEPENDENCE command</a> with the file name.</p>
 <div>
 <div><code><b>filter: </b></code>string, the name of an existing extension.</div>
 </div>
@@ -372,10 +372,10 @@ These values can be of numeric or string type, independent of the parameter type
 <ul class="itemizedlist">
 <li class="listitem">1 &#8211; numerical</li>
 <li class="listitem">2 &#8211; string</li>
-<li class="listitem">3 &#8211; group (as result of the <a href="https://web.archive.org/web/20250618044315/https://gdl.graphisoft.com/?p=854#ADDGROUP_gdlcommand" target="_blank" rel="noopener noreferrer">ADDGROUP</a> command and such)</li>
+<li class="listitem">3 &#8211; group (as result of the <a href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#ADDGROUP_gdlcommand" target="_blank" rel="noopener noreferrer">ADDGROUP</a> command and such)</li>
 <li class="listitem">4 &#8211; dictionary</li>
 </ul>
-<p>Useful when reading values in variables with <a class="xref" href="https://web.archive.org/web/20250618044315/https://gdl.graphisoft.com/?p=885#INPUT_gdlcommand">the INPUT command</a>, which can change between type 1 and 2 according to the current values.<br/>
+<p>Useful when reading values in variables with <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/gdl-xml-extension//#INPUT_gdlcommand">the INPUT command</a>, which can change between type 1 and 2 according to the current values.<br/>
 The type of these variables is not checked during the compilation process.</p>
 <h3 id="OUTPUT_gdlcommand">OUTPUT</h3>
 <pre class="programlisting"><b id="OUTPUT_keyword_2.14.7.7.4.1">OUTPUT</b> channel, recordID, fieldID, expression1 [, expression2, ...]</pre>

@@ -98,7 +98,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <script type="text/javascript" src="/gdl/web.archive.org/web/20250518184039js_/https%253A/gdl.graphisoft.com/wp-content/themes/graphisoft-dev-theme/assets/highlight.js/highlight.min.js?ver=9.9.0-acapi" id="highlightjs-js"></script>
 <link rel="https://api.w.org/" href="https://gdl.graphisoft.com/wp-json/"/><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://gdl.graphisoft.com/xmlrpc.php?rsd"/>
 <link rel="canonical" href="index.html"/>
-<link rel="shortlink" href="https://web.archive.org/web/20240815143204/https://gdl.graphisoft.com/?p=895"/>
+<link rel="shortlink" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/doors-and-windows//"/>
 <link rel="alternate" type="application/json+oembed" href="https://web.archive.org/web/20240815143204/https://gdl.graphisoft.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgdl.graphisoft.com%2Freference-guide%2Fdoors-and-windows"/>
 <link rel="alternate" type="text/xml+oembed" href="https://web.archive.org/web/20240815143204/https://gdl.graphisoft.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgdl.graphisoft.com%2Freference-guide%2Fdoors-and-windows&amp;format=xml"/>
 
@@ -599,7 +599,7 @@ In the 2D script, the WALL_SECT_PEN, WALL_FILL_PEN and WALL_FILL global variable
 as these give you the pen numbers of the wall contour and fill plus the index number of the fill of the wall<br/>
 on the floor plan into which the door/window is placed. With composite walls, you have to use the corresponding global variables.</p>
 <p><a name="idm7973632032"></a><br/>
-<span class="italic">See </span><a class="xref" title="Chapter 12. Miscellaneous" href="https://web.archive.org/web/20240815143204/https://gdl.graphisoft.com/?p=887#Miscellaneous_chapter">Chapter 12, <i>Miscellaneous</i></a> for details.</p>
+<span class="italic">See </span><a class="xref" title="Chapter 12. Miscellaneous" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/doors-and-windows//#Miscellaneous_chapter">Chapter 12, <i>Miscellaneous</i></a> for details.</p>
 <p>The object libraries come with a large set of door/window macros.<br/>
 These GDL scripts contain common building elements which are used by many doors/windows in the library.<br/>
 There are macros for generating commonly-used frames, panels and many other types of door/window parts.<br/>
@@ -699,7 +699,7 @@ In this case, special attention must be paid to the visibility of the edges of t
 </div>
 <p>&nbsp;</p>
 <div><a name="idm7973625536"></a></p>
-<div><a name="idm7973625536"></a><code><b>maski: </b></code>similar to <a class="xref" href="https://web.archive.org/web/20240815143204/https://gdl.graphisoft.com/?p=853#CUTPOLYA_gdlcommand">the CUTPOLYA command</a>:</div>
+<div><a name="idm7973625536"></a><code><b>maski: </b></code>similar to <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/cutting-in-3d//#CUTPOLYA_gdlcommand">the CUTPOLYA command</a>:</div>
 <div><code>maski = j<sub>1</sub> + 2*j<sub>2</sub> + 4*j<sub>3</sub> + 64*j<sub>7</sub></code>, where each j can be 0 or 1.</div>
 </div>
 <div>
@@ -722,7 +722,7 @@ A 2D representation can be scripted if needed (used with framing in plan off).</
 <p>The use of convex polygonal cross-sections is recommended; using concave polygons may result in strange shadings/renderings or cut errors.<br/>
 Convex polygons can be combined to obtain concave ones.<br/>
 Mirroring transformations affect the cutting direction in an unexpected way &#8211; to get a more straightforward result,<br/>
-use <a class="xref" href="https://web.archive.org/web/20240815143204/https://gdl.graphisoft.com/?p=895#WALLNICHE_gdlcommand">the WALLNICHE command</a>.</p>
+use <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/doors-and-windows//#WALLNICHE_gdlcommand">the WALLNICHE command</a>.</p>
 <div class="example">
 <p><a name="idm7973606992"></a></p>
 <p class="title"><b>Example 1:<br/>
@@ -798,7 +798,7 @@ PRISM_ 12, 0.1,
         ...
         xn, yn, maskn[, matn]</pre>
 <p>&nbsp;</p>
-<p><a name="idm7973604832"></a>Similar to <a class="xref" href="https://web.archive.org/web/20240815143204/https://gdl.graphisoft.com/?p=853#CUTFORM_gdlcommand">the CUTFORM command</a>.</p>
+<p><a name="idm7973604832"></a>Similar to <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/cutting-in-3d//#CUTFORM_gdlcommand">the CUTFORM command</a>.</p>
 <div>
 <div><code><b>method: </b></code>Controls the form of the cutting body:</div>
 <div><code>1: </code>prism shaped,</div>
@@ -814,7 +814,7 @@ The direction of the wedge’s top edge is parallel to the Y axis and its positi
 <div><code>j<sub>4</sub>: </code>define the limit of the cut (with j4),</div>
 <div><code>j<sub>5</sub>: </code>define the limit of the cut (with j5),</div>
 <div><code>j<sub>6</sub>: </code>generate a boolean intersection with the cutting body rather than a boolean difference.<br/>
-(can only be used with <a class="xref" href="https://web.archive.org/web/20240815143204/https://gdl.graphisoft.com/?p=853#CUTFORM_gdlcommand">the CUTFORM command</a>),</div>
+(can only be used with <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/cutting-in-3d//#CUTFORM_gdlcommand">the CUTFORM command</a>),</div>
 <div><code>j<sub>7</sub>: </code>edges generated by the bottom of the cutting body will be invisible,</div>
 <div><code>j<sub>8</sub>: </code>edges generated by the top of the cutting body will be invisible.</div>
 <div><code>j<sub>9</sub>: </code>cutting shape has custom side materials (mati).</div>
@@ -863,7 +863,7 @@ Defines the visibility of the edges of the cutting body.</div>
 <p><a name="idm7973573232"></a><br/>
 The hole in the wall on the left is created when the program automatically cuts the hole for the door/window.<br/>
 In this case the sides will be of radial direction.<br/>
-On the right, the hole is cut using <a class="xref" href="https://web.archive.org/web/20240815143204/https://gdl.graphisoft.com/?p=895#WALLHOLE_gdlcommand">the WALLHOLE command</a> in the 3D Script of the door/window object.<br/>
+On the right, the hole is cut using <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/doors-and-windows//#WALLHOLE_gdlcommand">the WALLHOLE command</a> in the 3D Script of the door/window object.<br/>
 The object itself needs to be written by taking these factors into consideration.</p>
 <p>Another thing to consider is whether the door/window placed into the curved wall is a straight or a curved one.</p>
 <div><img decoding="async" src="/gdl/web.archive.org/web/20250518184039im_/https%253A/gdl.graphisoft.com/wp-content/uploads/ac19-gdl/DW_rect_curved_DWcurved.png" alt="https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/DW_rect_curved_DWcurved.png"/></div>
@@ -1014,7 +1014,7 @@ Only the cut part of the wall is affected, view wall polygons stay intact.</p>
 <p>The cover polygon has no contour.</p>
 <p>This command can be used in the 2D script of door/window objects only.</p>
 <p>&nbsp;</p>
-<p><a name="idm7973560704"></a>The parameterization of the command is mainly the same as the one of <a class="xref" href="https://web.archive.org/web/20240815143204/https://gdl.graphisoft.com/?p=857#POLY2_B2_gdlcommand">the POLY2_B{2} command</a>.</p>
+<p><a name="idm7973560704"></a>The parameterization of the command is mainly the same as the one of <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/doors-and-windows//#POLY2_B2_gdlcommand">the POLY2_B{2} command</a>.</p>
 <div>
 <div><code><b>fill_control: </b></code></div>
 <div><code>fill_control = 2*j<sub>2</sub> + 8*j<sub>4</sub> + 16*j<sub>5</sub> + 32*j<sub>6</sub> + 64*j<sub>7</sub></code>, where each j can be 0 or 1.</div>
@@ -1035,13 +1035,13 @@ Only the cut part of the wall is affected, view wall polygons stay intact.</p>
         ...
         xn, yn, sn</pre>
 <p>Advanced version of WALLHOLE2, where fill distortion can be controlled in an enhanced way.</p>
-<p>It is equivalent to <a class="xref" href="https://web.archive.org/web/20240815143204/https://gdl.graphisoft.com/?p=857#POLY2_B5_gdlcommand">the POLY2_B{5} command</a> in the geometric definition.</p>
+<p>It is equivalent to <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/doors-and-windows//#POLY2_B5_gdlcommand">the POLY2_B{5} command</a> in the geometric definition.</p>
 <div>
 <div><code><b>distortion_flags: </b></code></div>
 <div><code>distortion_flags = j<sub>1</sub> + 2*j<sub>2</sub> + 4*j<sub>3</sub> + 8*j<sub>4</sub> + 16*j<sub>5</sub> + 32*j<sub>6</sub> + 64*j<sub>7</sub> + 128*j<sub>8</sub></code>, where each j can be 0 or 1.</div>
 <p>The valid value for distortion_flags is between 0 and 255. Don’t use value out of this range.</p>
 <p><code class="literal">j<sub>1</sub>-j<sub>7</sub>:</code><br/>
-similar to <a class="xref" href="https://web.archive.org/web/20240815143204/https://gdl.graphisoft.com/?p=857#POLY2_B5_gdlcommand">the POLY2_B{5} command</a>,</p>
+similar to <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/doors-and-windows//#POLY2_B5_gdlcommand">the POLY2_B{5} command</a>,</p>
 <div><code>j<sub>8</sub>: </code><br/>
 local fill should align with the wall direction<br/>
 (fill origin is at the wall origin and directions are matching), meaningful only when j4 is set.<br/>
@@ -1084,14 +1084,14 @@ Wall openings defined via WALLHOLE2 in another window/door object cut the line g
 while wallholes coming from the same object don’t.</p>
 <p>This command can be used in the 2D script of door/window objects only.</p>
 <p>&nbsp;</p>
-<p><a name="idm7973536688"></a>The parameterization of the command is exactly the same as the one of <a class="xref" href="https://web.archive.org/web/20240815143204/https://gdl.graphisoft.com/?p=857#LINE2_gdlcommand">the LINE2 command</a>.</p>
+<p><a name="idm7973536688"></a>The parameterization of the command is exactly the same as the one of <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/doors-and-windows//#LINE2_gdlcommand">the LINE2 command</a>.</p>
 <h3 id="WALLARC2_gdlcommand">WALLARC2</h3>
 <pre class="programlisting"><b id="WALLARC2_keyword_2.15.9.5.6.3.5.4.1">WALLARC2</b> x, y, r, alpha, beta</pre>
 <p>An arc with its centerpoint at (x, y) from the angle alpha to beta, with a radius of r, which is drawn by the containing wall.<br/>
 Wall openings defined via WALLHOLE2 in another window/door object cut the arc generated by this command,<br/>
 while wallholes coming from the same object don’t.</p>
 <p>This command can be used in the 2D script of door/window objects only.</p>
-<p>The parameterization of the command is exactly the same as the one of <a class="xref" href="https://web.archive.org/web/20240815143204/https://gdl.graphisoft.com/?p=857#ARC2_gdlcommand">the ARC2 command</a>.</p>
+<p>The parameterization of the command is exactly the same as the one of <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/doors-and-windows//#ARC2_gdlcommand">the ARC2 command</a>.</p>
 </div>
 </div>
 </div>

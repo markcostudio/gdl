@@ -97,7 +97,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/web.archive.org\/web\/2025061806
 <script type="text/javascript" src="/gdl/web.archive.org/web/20250518184039js_/https%253A/gdl.graphisoft.com/wp-content/themes/graphisoft-dev-theme/assets/highlight.js/highlight.min.js?ver=9.9.0-acapi" id="highlightjs-js"></script>
 <link rel="https://api.w.org/" href="https://gdl.graphisoft.com/wp-json/"/><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://gdl.graphisoft.com/xmlrpc.php?rsd"/>
 <link rel="canonical" href="index.html"/>
-<link rel="shortlink" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851"/>
+<link rel="shortlink" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//"/>
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgdl.graphisoft.com%2Freference-guide%2Fprimitive-elements%2F"/>
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgdl.graphisoft.com%2Freference-guide%2Fprimitive-elements%2F&amp;format=xml"/>
 
@@ -363,7 +363,7 @@ EDGE (VECT)
 PGON (PIPG)
 COOR
 BODY</pre>
-<p>Searching for adjacent polygons by the edges is done during the execution of <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#BODY_gdlcommand">the BODY command</a>.</p>
+<p>Searching for adjacent polygons by the edges is done during the execution of <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#BODY_gdlcommand">the BODY command</a>.</p>
 <p>The numbering of VERTs, EDGEs, VECTs and PGONs is relative to the last (explicit or implicit) BASE statement.<br/>
 Status values are used to store special information about primitives.<br/>
 Each single bit usually has an independent meaning in the status, but there are some exceptions.</p>
@@ -374,7 +374,7 @@ The default for each status is zero.</p>
 <p>A node in the x-y-z space, defined by three coordinates.</p>
 <h3 id="VERT2_gdlcommand">VERT{2}</h3>
 <pre class="programlisting"><b id="VERT_keyword_2.7.8.16.4.1">VERT</b> x, y, z, hard</pre>
-<p>Extension of <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#VERT_gdlcommand">the VERT command</a> including a possibility to declare a node to be hard vertex.<br/>
+<p>Extension of <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#VERT_gdlcommand">the VERT command</a> including a possibility to declare a node to be hard vertex.<br/>
 A hard vertex defines a break when rendering smooth surfaces.</p>
 <p><code><b>x, y, z: </b></code>coordinates of the node.<br/>
 <code><b>hard: </b></code><br/>
@@ -382,9 +382,9 @@ A hard vertex defines a break when rendering smooth surfaces.</p>
 <code>0: </code>otherwise</p>
 <h3 id="TEVE_gdlcommand">TEVE</h3>
 <pre class="programlisting"><b id="TEVE_keyword_2.7.8.17.4.1">TEVE</b> x, y, z, u, v</pre>
-<p>Extension of <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#VERT_gdlcommand">the VERT command</a> including a texture coordinate definition.<br/>
-Can be used instead of <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#VERT_gdlcommand">the VERT command</a> if user-defined texture coordinates are required<br/>
-instead of the automatic texture wrapping (<span class="italic">see <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#COOR_gdlcommand">the COOR command</a></span>).</p>
+<p>Extension of <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#VERT_gdlcommand">the VERT command</a> including a texture coordinate definition.<br/>
+Can be used instead of <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#VERT_gdlcommand">the VERT command</a> if user-defined texture coordinates are required<br/>
+instead of the automatic texture wrapping (<span class="italic">see <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#COOR_gdlcommand">the COOR command</a></span>).</p>
 <p><code><b>x, y, z: </b></code>coordinates of a node.</p>
 <p><code><b>u, v: </b></code>texture coordinates of the node (u, v)<br/>
 Coordinates for each vertex of the current body must be specified and each vertex should have only one texture coordinate.<br/>
@@ -438,28 +438,28 @@ Reserved status bits for future use:<br/>
 n = 0 is allowed for special purposes.</p>
 <h3 id="PGON2_gdlcommand">PGON{2}</h3>
 <pre class="programlisting"><b id="PGON2_keyword_2.7.8.21.4.1">PGON{2}</b> n, vect, status, wrap, edge_or_wrap1, ..., edge_or_wrapn</pre>
-<p>The first three parameters are similar to the ones at <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#PGON_gdlcommand">the PGON command</a>.<br/>
+<p>The first three parameters are similar to the ones at <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#PGON_gdlcommand">the PGON command</a>.<br/>
 <code><b>wrap: </b></code>wrapping mode + projection type.<br/>
 <code>0: </code>the global wrapping mode is applied,<br/>
-<code>&gt; 0: </code>the meaning is the same as it is in <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#COOR_gdlcommand">the COOR command</a>.<br/>
+<code>&gt; 0: </code>the meaning is the same as it is in <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#COOR_gdlcommand">the COOR command</a>.<br/>
 <code><b>edge_or_wrap1, ..., edge_or_wrapn: </b></code>The number and meaning of these parameters are based on the wrap definition:<br/>
 <code>edge1, ..., edgen: </code><br/>
-if wrap is 0; in this case <code class="literal">edgen</code> means the same as at <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#PGON_gdlcommand">the PGON command</a>,<br/>
+if wrap is 0; in this case <code class="literal">edgen</code> means the same as at <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#PGON_gdlcommand">the PGON command</a>,<br/>
 and globally defined texture mapping will be applied;<br/>
 <code>x1, y1, z1, x2, y2, z2, x3, y3, z3, x4, y4, z4, edge1, ..., edgen: </code><br/>
 if wrapping mode isn&#8217;t 0 in wrap;<br/>
 in this case <code class="literal">xi, yi, zi</code> coordinates defining the coordinate system of the texture mapping for the polygon;<br/>
 <code>edge1, u1, v1, ..., edgen, un, vn: </code><br/>
 if wrapping mode is 0 but projection type isn&#8217;t 0 in wrap;<br/>
-in this case <code class="literal">ui, vi</code> texture space coordinates are the same as at <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#TEVE_gdlcommand">the TEVE command</a>; the mapping will affect the currently defined polygon only.</p>
+in this case <code class="literal">ui, vi</code> texture space coordinates are the same as at <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#TEVE_gdlcommand">the TEVE command</a>; the mapping will affect the currently defined polygon only.</p>
 <h3 id="PGON3_gdlcommand">PGON{3}</h3>
 <pre class="programlisting"><b id="PGON3_keyword_2.7.8.22.4.1">PGON{3}</b> n, vect, status, wrap_method, wrap_flags, edge_or_wrap1, ..., edge_or_wrapn</pre>
-<p>The parameters are similar to the <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#PGON2_gdlcommand">the PGON{2} command</a>, except <code class="literal">wrap</code>, which is split into two parameters <code class="literal">wrap_method</code> and <code class="literal">wrap_flags</code>. The meaning of these is the same as in <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#COOR2_gdlcommand">the COOR{2} command</a>.</p>
+<p>The parameters are similar to the <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#PGON2_gdlcommand">the PGON{2} command</a>, except <code class="literal">wrap</code>, which is split into two parameters <code class="literal">wrap_method</code> and <code class="literal">wrap_flags</code>. The meaning of these is the same as in <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#COOR2_gdlcommand">the COOR{2} command</a>.</p>
 <h3 id="PIPG_gdlcommand">PIPG</h3>
 <pre class="programlisting"><b id="PIPG_keyword_2.7.8.23.4.1">PIPG</b> expression, a, b, mask, n, vect, status,
      edge1, edge2, ..., edgen</pre>
 <p>Picture polygon definition.<br/>
-The first four parameters are the same as in <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=849#PICTURE_gdlcommand">the PICTURE command</a>; the remaining ones are the same as in <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#PGON_gdlcommand">the PGON command</a>.</p>
+The first four parameters are the same as in <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#PICTURE_gdlcommand">the PICTURE command</a>; the remaining ones are the same as in <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#PGON_gdlcommand">the PGON command</a>.</p>
 <h3 id="COOR_gdlcommand">COOR</h3>
 <p><span style="color: #998000;"><i><strong>Compatibility</strong>: deprecated since ARCHICAD 20.</i></span></p>
 <pre class="programlisting"><b id="COOR_keyword_2.7.8.24.4.1">COOR</b> wrap, vert1, vert2, vert3, vert4</pre>
@@ -478,7 +478,7 @@ The first four parameters are the same as in <a class="xref" href="https://web.a
 <code>1024: </code>quadratic texture projection (recommended),<br/>
 <code>2048: </code>linear texture projection based on the average distance,<br/>
 <code>4096: </code>linear texture projection based on normal triangulation.</p>
-<p><em><strong>Note</strong>: The last three values are only effective with custom texture coordinate definitions (<span class="italic">see <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#TEVE_gdlcommand">the TEVE command</a></span>).</em></p>
+<p><em><strong>Note</strong>: The last three values are only effective with custom texture coordinate definitions (<span class="italic">see <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#TEVE_gdlcommand">the TEVE command</a></span>).</em></p>
 <p><code><b>vert1: </b></code>index of a VERT, representing the origin of the local coordinate system.<br/>
 <code><b>vert2, vert3, vert4: </b></code>indices of VERTs defining the three coordinate axes.</p>
 <p>Use a minus sign (-) before VERT indices if they are used only for defining the local coordinate system.<br/>
@@ -504,16 +504,16 @@ BODY 1</pre>
 <h3 id="COOR2_gdlcommand">COOR{2}</h3>
 <p><span style="color: #998000;"><i><strong>Compatibility</strong>: deprecated since ARCHICAD 20.</i></span></p>
 <pre class="programlisting"><b id="COOR2_keyword_2.7.8.25.4.1">COOR{2}</b> wrap_method, wrap_flags, vert1, vert2, vert3, vert4</pre>
-<p><a name="idm7978258368"></a>Similar to <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#COOR_gdlcommand">the COOR command</a>, changing <code class="literal">wrap</code> to two parameters <code class="literal">wrap_method</code> and <code class="literal">wrap_flags</code>, and also extending the possibilities of it.</p>
-<p><code><b>wrap_method: </b></code>Wrapping modes are the same as described in the <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#COOR_gdlcommand">the COOR command</a>. Projection types don&#8217;t apply, use <code class="literal">wrap_flags</code> instead.</p>
+<p><a name="idm7978258368"></a>Similar to <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#COOR_gdlcommand">the COOR command</a>, changing <code class="literal">wrap</code> to two parameters <code class="literal">wrap_method</code> and <code class="literal">wrap_flags</code>, and also extending the possibilities of it.</p>
+<p><code><b>wrap_method: </b></code>Wrapping modes are the same as described in the <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#COOR_gdlcommand">the COOR command</a>. Projection types don&#8217;t apply, use <code class="literal">wrap_flags</code> instead.</p>
 <p><code><b>wrap_flags: </b></code>Wrapping flags<br/>
 <code>wrap_flags = 4*j<sub>3</sub> + 8*j<sub>4</sub> + 16*j<sub>5</sub> + 32*j<sub>6</sub> + 64*j<sub>7</sub> + 128*j<sub>8</sub></code>, where each j can be 0 or 1.<br/>
 <code>j<sub>3</sub>: </code>quadratic texture projection (recommended),<br/>
 <code>j<sub>4</sub>: </code>linear texture projection based on the average distance,<br/>
 <code>j<sub>5</sub>: </code>linear texture projection based on normal triangulation,<br/>
-<code>j<sub>8</sub>: </code>translate the origin of the texture coordinate system closest to the global origin in the direction of the X, Y or Z axis respectively. For example, <code class="literal">j6</code> makes the origin translating in the direction of the X axis (along <code class="literal">v2 - v1</code> vector) so that it will be the orthogonal projection of the global origin to the line of the X axis. That is, if all <code class="literal">j<sub>6</sub></code>, <code class="literal">j<sub>7</sub></code> and <code class="literal">j<sub>8</sub></code> are <code class="literal">1</code>, the origin is translated into the global origin (same as if projection type is <code class="literal">256</code> in the <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#COOR_gdlcommand">the COOR command</a>).</p>
+<code>j<sub>8</sub>: </code>translate the origin of the texture coordinate system closest to the global origin in the direction of the X, Y or Z axis respectively. For example, <code class="literal">j6</code> makes the origin translating in the direction of the X axis (along <code class="literal">v2 - v1</code> vector) so that it will be the orthogonal projection of the global origin to the line of the X axis. That is, if all <code class="literal">j<sub>6</sub></code>, <code class="literal">j<sub>7</sub></code> and <code class="literal">j<sub>8</sub></code> are <code class="literal">1</code>, the origin is translated into the global origin (same as if projection type is <code class="literal">256</code> in the <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#COOR_gdlcommand">the COOR command</a>).</p>
 <p><em><strong>Note</strong>: The <code class="literal">j<sub>3</sub></code>, <code class="literal">j<sub>4</sub></code> and <code class="literal">j<sub>5</sub></code> flags are only effective if <code class="literal">wrap_method</code> is <code class="literal">0</code> and only one of them can be <code class="literal">1</code>. The <code class="literal">j<sub>6</sub></code>, <code class="literal">j<sub>7</sub></code> and <code class="literal">j<sub>8</sub></code> flags are only effective if <code class="literal">wrap_method</code> is not <code class="literal">0</code>. These can be <code class="literal">1</code> at the same time in any combination.</em></p>
-<p><code><b>vert1, vert2, vert3, vert4: </b></code>like in <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#COOR_gdlcommand">the COOR command</a>.</p>
+<p><code><b>vert1, vert2, vert3, vert4: </b></code>like in <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#COOR_gdlcommand">the COOR command</a>.</p>
 <h3 id="COOR3_gdlcommand">COOR{3}</h3>
 <p><span style="color: #009980;"><i><strong>Compatibility</strong>: introduced in ARCHICAD 20.</i></span></p>
 <pre class="programlisting"><b id="COOR3_keyword_2.7.8.26.4.1">COOR{3}</b> wrapping_method, wrap_flags,
@@ -524,7 +524,7 @@ BODY 1</pre>
 <p>Similar to the COOR{2} command. Can be used with array parameter input (see <a style="color: #529be5;" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/wall-door-window-and-wall-end-parameters/#WALL_TEXTURE_WRAP_gdlglobal" target="_blank">WALL_TEXTURE_WRAP</a> for more).<br/>
 The coordinate system of the projection body is included in the COOR{3} command itself, no need to define additional vertexes in the current BODY.<br/>
 Compatible with NURBS bodies (no non-NURBS primitives are needed to set up the texture coordinate system).</p>
-<p><code><b>wrap_method: </b></code>Wrapping modes are the same as described in the <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=851#COOR_gdlcommand">the COOR command</a>, supplemented by NURBS based wrapping mode. Projection types don&#8217;t apply, use <code class="literal">wrap_flags</code> instead.<br/>
+<p><code><b>wrap_method: </b></code>Wrapping modes are the same as described in the <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#COOR_gdlcommand">the COOR command</a>, supplemented by NURBS based wrapping mode. Projection types don&#8217;t apply, use <code class="literal">wrap_flags</code> instead.<br/>
 <code>1: </code>planar box (deprecated),<br/>
 <code>2: </code>box,<br/>
 <code>3: </code>cylindrical,<br/>
@@ -570,7 +570,7 @@ COOR{2} wrapping_method, wrap_flags, -1, -2, -3, -4
 <code>j<sub>6</sub>: </code>body always casts shadow independently from automatic preselection algorithm,<br/>
 <code>j<sub>7</sub>: </code>body never casts shadow.</p>
 <p>If neither j6 nor j7 are set, the automatic shadow preselection is performed.</p>
-<p><span class="italic">See <a class="xref" href="https://web.archive.org/web/20250618060857/https://gdl.graphisoft.com/?p=867#SHADOW_gdlcommand">the SHADOW command</a>.</span></p>
+<p><span class="italic">See <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#SHADOW_gdlcommand">the SHADOW command</a>.</span></p>
 <p>If the status value is negative, the engine will calculate the status of the body.</p>
 <p><b>Example:</b><br/>
 <img decoding="async" src="/gdl/web.archive.org/web/20250518184039im_/https%253A/gdl.graphisoft.com/wp-content/uploads/ac19-gdl/3Dshapes_body_ex.png" alt="https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/3Dshapes_body_ex.png"/><br/>

@@ -97,7 +97,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/web.archive.org\/web\/2025061804
 <script type="text/javascript" src="/gdl/web.archive.org/web/20250518184039js_/https%253A/gdl.graphisoft.com/wp-content/themes/graphisoft-dev-theme/assets/highlight.js/highlight.min.js?ver=9.9.0-acapi" id="highlightjs-js"></script>
 <link rel="https://api.w.org/" href="https://gdl.graphisoft.com/wp-json/"/><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://gdl.graphisoft.com/xmlrpc.php?rsd"/>
 <link rel="canonical" href="index.html"/>
-<link rel="shortlink" href="https://web.archive.org/web/20250618044847/https://gdl.graphisoft.com/?p=860"/>
+<link rel="shortlink" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//"/>
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://web.archive.org/web/20250618044847/https://gdl.graphisoft.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgdl.graphisoft.com%2Freference-guide%2F3d-projections-in-2d%2F"/>
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://web.archive.org/web/20250618044847/https://gdl.graphisoft.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgdl.graphisoft.com%2Freference-guide%2F3d-projections-in-2d%2F&amp;format=xml"/>
 
@@ -342,7 +342,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/web.archive.org\/web\/2025061804
 <pre class="programlisting"><b id="PROJECT22_keyword_2.8.6.3.4.1">PROJECT2{2}</b> projection_code, angle, method [, backgroundColor,
         fillOrigoX, fillOrigoY, filldirection]</pre>
 <p>Creates a projection of the 3D script in the same library part and adds the generated lines to the 2D parametric symbol.<br/>
-The 2nd version PROJECT2{2}, together with a previous <a class="xref" href="https://web.archive.org/web/20250618044847/https://gdl.graphisoft.com/?p=867#SETFILL_gdlcommand"><code>[SET] FILL</code></a> command,<br/>
+The 2nd version PROJECT2{2}, together with a previous <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#SETFILL_gdlcommand"><code>[SET] FILL</code></a> command,<br/>
 allows the user to control the fill background, origin and direction of the resulting drawing from the 2D script.<br/>
 The <code class="literal">SET FILL 0</code> shortcut to get an empty fill does not work in this case,<br/>
 you need to reference an actual empty fill.</p>
@@ -391,7 +391,7 @@ you need to reference an actual empty fill.</p>
 </div>
 <div class="note">
 <h3 class="title">Note</h3>
-<p><a class="xref" href="https://web.archive.org/web/20250618044847/https://gdl.graphisoft.com/?p=867#SETFILL_gdlcommand">the [SET] FILL command</a> is effective for PROJECT2{2}</p>
+<p><a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#SETFILL_gdlcommand">the [SET] FILL command</a> is effective for PROJECT2{2}</p>
 </div>
 <div class="example">
 <p><a name="idm7977682048"></a></p>
@@ -487,7 +487,7 @@ You can also generate the projection with actual parameters set in the command.<
 <div><code>8192: </code>addition modifier: vectorial hatches and fills are oriented.</div>
 </div>
 <p>Known limitation: lines of the cut part cannot be treated separately, only all lines together can be set to be inner or contour.</p>
-<p><em>Compatibility note:</em> up to ARCHICAD 19, cut polygons were generated with attributes defined by the <a href="https://web.archive.org/web/20250618044847/https://gdl.graphisoft.com/?p=867#SECT_FILL_gdlcommand" target="_blank" rel="noopener noreferrer">SECT_FILL</a> command or the <a href="https://web.archive.org/web/20250618044847/https://gdl.graphisoft.com/?p=867#SECT_ATTRS_gdlcommand" target="_blank" rel="noopener noreferrer">SECT_ATTRS</a> command in the 3D script. From ARCHICAD 20 the attributes of the cut polygons are defined by the cover fill of the outer surfaces (in case the addition modifier 32 is not set).</p>
+<p><em>Compatibility note:</em> up to ARCHICAD 19, cut polygons were generated with attributes defined by the <a href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#SECT_FILL_gdlcommand" target="_blank" rel="noopener noreferrer">SECT_FILL</a> command or the <a href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/keywords//#SECT_ATTRS_gdlcommand" target="_blank" rel="noopener noreferrer">SECT_ATTRS</a> command in the 3D script. From ARCHICAD 20 the attributes of the cut polygons are defined by the cover fill of the outer surfaces (in case the addition modifier 32 is not set).</p>
 <div>
 <div><code><b>parts: </b></code>defines the parts to generate. The 1+2+4+8+16+32 value means all parts.</div>
 <div><code>parts = j<sub>1</sub> + 2*j<sub>2</sub> + 4*j<sub>3</sub> + 8*j<sub>4</sub> + 16*j<sub>5</sub> + 32*j<sub>6</sub></code>, where each j can be 0 or 1.</div>
