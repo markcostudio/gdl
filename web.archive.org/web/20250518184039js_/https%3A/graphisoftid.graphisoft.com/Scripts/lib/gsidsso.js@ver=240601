@@ -1,0 +1,150 @@
+var _____WB$wombat$assign$function_____=function(name){return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name))||self[name];};if(!self.__WB_pmw){self.__WB_pmw=function(obj){this.__WB_source=obj;return this;}}{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opens = _____WB$wombat$assign$function_____("opens");
+var GSIDSSO = (function () {
+    var gsidUrl = null;
+    var iframeMessage = null;
+    var iframeLoaded;
+    var timer;
+
+    var module = {};
+
+    module.init = function (url) {
+        gsidUrl = url;
+        iframeLoaded = jQuery.Deferred();
+        createIframe();
+        return iframeLoaded.promise();
+    };
+
+    module.getAccessToken = function () {
+        return iframeLoaded.promise().then(function () {
+            return sendMessageToIFrame('getAccessToken');
+        }, function () {
+            var deffered = jQuery.Deferred();
+            deffered.resolve(false);
+            return deffered.promise();
+        });
+    };
+
+    module.getAccessTokenPayload = function () {
+        return module.getAccessToken().then(function (accessToken) {
+            return getAccessTokenPayload(accessToken);
+        });
+    };
+    module.logout = function () {
+        return iframeLoaded.promise().then(function () {
+            return sendMessageToIFrame('logout', true);
+        });
+    };
+
+
+    function createIframe() {
+        iframe = document.createElement('iframe');
+        iframe.style.width = '1px';
+        iframe.style.height = '1px';
+        iframe.style.position = 'absolute';
+        iframe.style.top = '-100px';
+
+        document.body.appendChild(iframe);
+        iframe.contentWindow.document.open();
+        iframe.contentWindow.location.href = gsidUrl;
+
+        timer = setTimeout(function () {
+            iframeLoaded.reject(false);
+        }, 13000);
+
+        window.addEventListener("message", receiveMessage, false);
+    }
+
+    function sendMessageToIFrame(message, forceExec) {
+        if (!!iframeMessage && !!iframeMessage.promise && !forceExec) {
+            return iframeMessage.promise();
+        }
+        var deffered = jQuery.Deferred();
+        iframeMessage = deffered;
+        iframe.contentWindow.postMessage(message, gsidUrl);
+        return deffered.promise();
+    }
+
+    function receiveMessage(event) {
+        if (event.origin !== gsidDomain() || event.data === "")
+            return;
+
+        if (event.data === 'iframeLoaded') {
+            clearTimeout(timer);
+            iframeLoaded.resolve(true);
+            return;
+        }
+
+        if (event.data === 'thirdPartyCookiesBlocked') {
+            clearTimeout(timer);
+            iframeLoaded.resolve(false);
+            return;
+        }
+
+        if (iframeMessage) {
+            iframeMessage.resolve(event.data);
+        }
+        iframeMessage = null;
+    }
+
+    function gsidDomain() {
+        var urlParts = gsidUrl.split('://');
+        var protocol = urlParts[0];
+        urlParts = urlParts[1].split('/');
+        return protocol + '://' + urlParts[0];
+    }
+
+
+    function getAccessTokenPayload(accessToken) {
+        if (!accessToken) return null;
+        var segments = accessToken.split('.');
+        if (segments.length !== 3) return null;
+        var payload = JSON.parse(url_base64_decode(segments[1]));
+        return payload;
+    }
+
+    function url_base64_decode(str) {
+        var output = str.replace(/-/g, '+').replace(/_/g, '/');
+        switch (output.length % 4) {
+            case 0:
+                break;
+            case 2:
+                output += '==';
+                break;
+            case 3:
+                output += '=';
+                break;
+            default:
+                throw 'Illegal base64url string!';
+        }
+        var result = window.atob(output);
+        return result;
+    }
+
+    return module;
+}());
+
+}
+
+/*
+     FILE ARCHIVED ON 07:34:55 Apr 26, 2025 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:35:36 May 14, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.442
+  load_resource: 55.224
+  PetaboxLoader3.resolve: 34.356
+  PetaboxLoader3.datanode: 20.103
+*/

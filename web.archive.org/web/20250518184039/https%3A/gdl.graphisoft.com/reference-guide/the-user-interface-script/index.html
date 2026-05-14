@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html id="graphisoft-dev" lang="en-US">
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=oZ57VlYl" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://gdl.graphisoft.com/reference-guide/the-user-interface-script/","20250512053856","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1747028336");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta name="robots" content="noodp"/>
+	<meta name="description" content=" Using the following GDL commands, you can define a custom interface for a Library Part’s Custom Settings panel in the settings dialog box
+"/>
+
+	<title>The User Interface Script | GRAPHISOFT GDL Center</title>
+
+		<link rel="icon" sizes="192x192" href="https://web.archive.org/web/20250512053856im_/https://assets.graphisoft.com/favicons/favicon-graphisoft-192x192.png">
+	<link rel="icon" href="https://web.archive.org/web/20250512053856im_/https://assets.graphisoft.com/favicons/favicon-graphisoft-32x32.png">
+	<link rel="shortcut icon" href="https://web.archive.org/web/20250512053856im_/https://assets.graphisoft.com/favicons/favicon-graphisoft-32x32.png">
+	
+	<link href="https://web.archive.org/web/20250512053856cs_/https://assets.graphisoft.com/typography/proximanova.css" rel="stylesheet"/>
+
+	<link rel="pingback" href="https://gdl.graphisoft.com/xmlrpc.php"/>
+
+		<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://web.archive.org/web/20250512053856/https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-KH8K8F');</script>
+	<!-- End Google Tag Manager -->
+	
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="The User Interface Script | "/>
+		<meta property="og:url" content=""/>
+	<meta property="og:description" content=" Using the following GDL commands, you can define a custom interface for a Library Part’s Custom Settings panel in the settings dialog box
+"/>
+
+		<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+<meta name="robots" content="max-image-preview:large"/>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="dns-prefetch" href="https://web.archive.org/web/20250512053856/https://graphisoftid.graphisoft.com/"/>
+<link rel="alternate" type="application/rss+xml" title="GRAPHISOFT GDL Center » Feed" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/feed/"/>
+<link rel="alternate" type="application/rss+xml" title="GRAPHISOFT GDL Center » Comments Feed" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/comments/feed/"/>
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/web.archive.org\/web\/20250512053856\/https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/web.archive.org\/web\/20250512053856\/https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/web.archive.org\/web\/20250512053856\/https:\/\/gdl.graphisoft.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\ud83d\udd25","\ud83d\udc26\u200b\ud83d\udd25")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://web.archive.org/web/20250512053856cs_/https://gdl.graphisoft.com/wp-includes/css/dist/block-library/style.min.css?ver=6.8" type="text/css" media="all"/>
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="bbp_new_topics-css" href="https://web.archive.org/web/20250512053856cs_/https://gdl.graphisoft.com/wp-content/plugins/bbpress-new-topics/css/new-topics.css?ver=1.0.2" type="text/css" media="all"/>
+<link rel="stylesheet" id="bbp-default-css" href="https://web.archive.org/web/20250512053856cs_/https://gdl.graphisoft.com/wp-content/plugins/bbpress/templates/default/css/bbpress.min.css?ver=2.6.13" type="text/css" media="all"/>
+<link rel="stylesheet" id="highlightjs-css" href="https://web.archive.org/web/20250512053856cs_/https://gdl.graphisoft.com/wp-content/themes/graphisoft-dev-theme/assets/highlight.js/styles/sunburst.min.css?ver=9.9.0-acapi" type="text/css" media="all"/>
+<link rel="stylesheet" id="graphisoft-dev.min-css" href="https://web.archive.org/web/20250512053856cs_/https://gdl.graphisoft.com/wp-content/themes/graphisoft-dev-theme/assets/css/graphisoft-dev.min.css?ver=250418" type="text/css" media="all"/>
+<script type="text/javascript">ajaxurl='https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/wp-admin/admin-ajax.php';pf_nonce='ae1bf44beb';</script><script type="text/javascript" src="https://web.archive.org/web/20250512053856js_/https://gdl.graphisoft.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20250512053856js_/https://gdl.graphisoft.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20250512053856js_/https://graphisoftid.graphisoft.com/Scripts/lib/gsidsso.js?ver=240601" id="gsidsso-js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20250512053856js_/https://gdl.graphisoft.com/wp-content/themes/graphisoft-dev-theme/assets/js/bootstrap.bundle.min.js?ver=5.3.3" id="bootstrap.min-js"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20250512053856js_/https://gdl.graphisoft.com/wp-content/themes/graphisoft-dev-theme/assets/highlight.js/highlight.min.js?ver=9.9.0-acapi" id="highlightjs-js"></script>
+<link rel="https://api.w.org/" href="https://gdl.graphisoft.com/wp-json/"/><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://gdl.graphisoft.com/xmlrpc.php?rsd"/>
+<link rel="canonical" href="index.html"/>
+<link rel="shortlink" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/?p=873"/>
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgdl.graphisoft.com%2Freference-guide%2Fthe-user-interface-script%2F"/>
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgdl.graphisoft.com%2Freference-guide%2Fthe-user-interface-script%2F&amp;format=xml"/>
+
+</head>
+<body class="wp-singular gdl_reference_guide-template-default single single-gdl_reference_guide postid-873 wp-theme-graphisoft-dev-theme has-sidebar">
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://web.archive.org/web/20250512053856if_/https://www.googletagmanager.com/ns.html?id=GTM-KH8K8F" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+<div id="header" class="container-fluid">
+
+<nav class="navbar navbar-menu-main navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a id="logo" class="navbar-brand" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/">
+				<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="site-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="big" x="0px" y="0px" xxxwidth="100%" xxxheight="auto" viewbox="0 0 1130.3 76.6" data-viewbox-small="0 0 612 76.6" enable-background="new 0 0 1130.3 76.6" preserveaspectratio="xMinYMid meet">
+<style type="text/css">
+.text {
+	fill: #fff;
+}
+</style>
+<g data-content="logo" class="text">
+	<g data-content="graphisoft">
+		<path d="M68.2,38.8H43.1v9.6h14.3v15.3c-5.1,1.6-10.4,3-16.2,3C23.5,66.7,11,55,11,38.4C11,22.2,23.6,9.8,39.8,9.8
+			c9,0,18,2.5,26.8,7.3V6.3C54.9,1.4,48.8,0,40,0C17.3,0,0,16.7,0,38.7c0,21.9,16.9,37.9,39.7,37.9c10.4,0,18.5-1.8,28.4-6.1V38.8
+			L68.2,38.8z"/>
+		<path d="M81.7,1v74.6h10.7l-0.1-32.4h4.5c5.5,0,10,1.8,19.9,17.1l9.9,15.3h12.8c-5.1-7.1-7-9.6-10.2-14.8
+			c-5.7-9.3-9.8-16.2-16.6-20.7c8-3.2,12.5-9.6,12.5-18.3C125,9,115.6,1,100.5,1L81.7,1L81.7,1z M91.4,10.2h6.9
+			c10.4,0,14.6,4.3,14.7,11.3c0.1,6.2-3.2,12.2-14.7,12.2h-6.9L91.4,10.2z"/>
+		<path d="M172.5,0.5h-7.5l-32.1,75.1h10.9l9.4-22H185l10,22h10.9L172.5,0.5z M168.5,17l12,27h-23.2L168.5,17z"/>
+		<path d="M213.7,1v74.6h10.7V43.2h11.2c17.3,0,25.2-9,25.2-20.7C260.7,10.6,253.3,1,237,1L213.7,1L213.7,1z
+			 M224.4,10.6H237c9.7,0,12.7,5.9,12.7,11.4c0,7.4-5.1,11.6-13.1,11.6h-12.1L224.4,10.6L224.4,10.6z"/>
+		<polygon points="333.3,1 322.6,1 322.6,33.6 280.8,33.6 280.8,1 270.1,1 270.1,75.6 280.8,75.6 280.8,43.2 
+			322.6,43.2 322.6,75.6 333.3,75.6 		"/>
+		<rect x="348.2" y="0.3" width="10.7" height="74.6"/>
+		<path d="M411.6,5.3C406.4,1.8,400.7,0,395,0c-13.7,0-22.6,7.8-22.6,19.9c0,20.5,32.3,22.2,32.3,37.6
+			c0,4.2-3.8,9.4-12.1,9.4c-7.3,0-14.2-3.8-19.7-10.8v13.6c6.2,4.7,12.8,6.9,20.9,6.9c12,0,20.9-8.5,20.9-20.2
+			c0-23.7-32.3-23.5-32.3-37.9c0-5.3,4.9-8.9,11.8-8.9c5,0,11.2,1.7,17.5,7.8L411.6,5.3L411.6,5.3z"/>
+		<path d="M420.8,38.3c0,20.2,15.4,38.3,39.8,38.3c25.3,0,40.4-18.2,40.4-38.3C501,17.5,485.5,0,460.8,0
+			C436.7,0,420.8,17.6,420.8,38.3 M431.2,38.3c0-16.4,12.4-28.4,29-28.4c16.7,0,29.1,12,29.1,28.4c0,16.3-12.4,28.4-29.1,28.4
+			C443.6,66.7,431.2,54.6,431.2,38.3"/>
+		<polygon points="521.5,10.6 521.5,33.6 550.6,33.6 550.6,43.2 521.5,43.2 521.5,75.6 510.8,75.6 510.8,1 612,1 
+			612,10.6 586.2,10.6 586.2,75.6 575.5,75.6 575.5,10.6"/>
+	</g>
+	<g data-content="gdl-center">
+		<path d="M1127.1,35.9c-7.7,0-11.2,4.4-11.2,12.2v19.8h-9.9V26.4h9.6V33c2.2-4.6,7-7.4,12.1-7.2c0.9,0,1.8,0.1,2.6,0.2
+			v10.1C1129.2,36,1128.2,35.9,1127.1,35.9z M1065.9,49.8c0.1,6.1,5.2,11,11.3,10.9c4.8,0.4,9.1-2.7,10.4-7.3l8.4,2.7
+			c-2.5,8.1-10.3,13.5-18.8,13.1c-12.2-0.5-21.7-10.8-21.2-23c0.5-11.1,9.1-20.1,20.2-21.1c12.8,0,20.3,8.5,20.3,21.6
+			c0,1-0.1,2.1-0.2,3.1L1065.9,49.8L1065.9,49.8z M1076.3,33.4c-5.3-0.1-9.8,3.9-10.2,9.2h20.4c0-5.1-4.2-9.3-9.3-9.3
+			C1076.9,33.3,1076.6,33.3,1076.3,33.4L1076.3,33.4z M1043.5,68.4c-6.3,0.6-11.9-4.1-12.5-10.4c-0.1-0.7-0.1-1.3,0-2V35.1h-7.7v-8.8
+			h2.1c3.3,0.3,6.1-2.1,6.4-5.4c0-0.4,0-0.7,0-1.1v-6.3h8.9v12.7h8.6v8.8h-8.6v19.3c-0.4,2.5,1.3,4.8,3.7,5.2c0.5,0.1,1,0.1,1.6,0
+			c1.1,0,2.3-0.1,3.4-0.3v8.2C1047.6,68.2,1045.6,68.5,1043.5,68.4z M1006.4,43.3c0.7-4.4-2.3-8.5-6.7-9.1c-0.6-0.1-1.2-0.1-1.8-0.1
+			c-4.8,0-8.7,4-8.7,8.8c0,0.4,0,0.7,0.1,1.1v24h-9.9V26.4h9.6v5.5c2.6-4.3,7.3-6.9,12.3-6.7c8.1-0.3,14.9,6.1,15.1,14.2
+			c0,0.8,0,1.5-0.1,2.3v26.3h-9.9L1006.4,43.3L1006.4,43.3z M939.2,49.8c0.1,6.1,5.2,11,11.3,10.9c4.8,0.4,9.1-2.7,10.4-7.3l8.4,2.7
+			c-2.5,8.1-10.3,13.5-18.8,13.1c-12.2-0.5-21.7-10.8-21.2-23c0.5-11.1,9.1-20.1,20.2-21.1c12.8,0,20.3,8.5,20.3,21.6
+			c0,1-0.1,2.1-0.2,3.1L939.2,49.8L939.2,49.8z M949.6,33.4c-5.3-0.1-9.8,3.9-10.2,9.2h20.4c0-5.1-4.2-9.3-9.3-9.3
+			C950.3,33.3,949.9,33.3,949.6,33.4L949.6,33.4z M897.1,59.4c8.4,0.3,15.8-5.2,18-13.3l9.4,3.1c-3.3,12.3-14.7,20.6-27.4,20
+			c-16.5,0.4-30.2-12.8-30.6-29.3c0-0.7,0-1.5,0-2.2c-0.7-16.8,12.4-30.9,29.1-31.6c0.5,0,0.9,0,1.4,0c12.6-0.8,24,7.4,27.2,19.6
+			l-9.6,3.2c-1.8-8.2-9.3-13.8-17.6-13.2c-12,1-20.9,11.6-19.9,23.7C878.1,50.1,886.5,58.5,897.1,59.4L897.1,59.4z M801.7,7.4h10.2
+			v50.8h27.8v9.7h-38V7.4L801.7,7.4z M761.4,67.9h-21.3V7.4h21.5c16.7,0.5,29.9,14.4,29.4,31.1C790.4,54.6,777.5,67.5,761.4,67.9
+			L761.4,67.9z M761.2,16.8h-10.9v41.7h10.8c10.5,0,19.2-6.7,19.2-20.7C780.3,23.6,771.7,16.8,761.2,16.8L761.2,16.8z M700.8,15.6
+			c-11.1,0-20.1,9-20.1,20.1c0,0.6,0,1.3,0.1,1.9c0,14.7,9.6,22.2,20,22.2c8.5,0.8,16.1-5.2,17.3-13.6h-20v-8.9h29.6v30.6h-8.3
+			l-0.7-7.7c-4.2,6-11.2,9.4-18.6,8.9c-16.3,0.2-29.7-12.9-29.8-29.2c0-0.8,0-1.5,0.1-2.3C669.6,21,682.4,6.9,699.1,6.1
+			c0.6,0,1.2,0,1.8,0c12.2-0.7,23.4,6.9,27.3,18.4l-9.6,3.7C716.2,20.4,708.9,15.2,700.8,15.6L700.8,15.6z"/>
+	</g>
+</g>
+</svg>
+			</a>
+		</div>
+
+		<div id="main-menu" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+<li id="menu-item-3016" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3016 "><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/blog">News</a></li>
+<li id="menu-item-3005" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3005 dropdown "><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/gdl-documentation" id="dropdowngdl-docs" class="dropdown-toggle" data-bs-toggle="dropdown" data-target="#" aria-haspopup="true" aria-expanded="false">GDL Docs <span class="glyphicon glyphicon-menu-down-mini" aria-hidden="true"></span></a>
+<ul class="dropdown-menu" role="menu" xxxdata-aria-labelledby="">
+	<li id="menu-item-2999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2999 active"><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide">GDL Reference Guide</a></li>
+	<li id="menu-item-3000" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3000 "><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/new-features-guide">New Features Guides</a></li>
+	<li id="menu-item-3003" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3003 "><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/gdl-style-guide">Style Guide and Technical Standards</a></li>
+	<li id="menu-item-3023" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3023 "><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/gdl_other_docs">Other Docs</a></li>
+</ul>
+</li>
+<li id="menu-item-3001" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3001 "><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/gdl-basics">Learning</a></li>
+<li id="menu-item-3002" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3002 "><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/tips-and-tricks">Tips &#038; Tricks</a></li>
+<li id="menu-item-3007" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3007 dropdown "><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/forums" id="dropdownforum" class="dropdown-toggle" data-bs-toggle="dropdown" data-target="#" aria-haspopup="true" aria-expanded="false">Forum <span class="glyphicon glyphicon-menu-down-mini" aria-hidden="true"></span></a>
+<ul class="dropdown-menu" role="menu" xxxdata-aria-labelledby="">
+	<li id="menu-item-3019" class="menu-item menu-item-type-post_type menu-item-object-forum menu-item-3019 "><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/forums/forum/general-discussions/">General discussions</a></li>
+	<li id="menu-item-3012" class="menu-item menu-item-type-post_type menu-item-object-forum menu-item-3012 "><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/forums/forum/about-this-site/">About this site</a></li>
+	<li id="menu-item-3011" class="menu-item menu-item-type-post_type menu-item-object-forum menu-item-3011 "><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/forums/forum/problems-and-solutions-in-gdl/">Problems and solutions in GDL</a></li>
+	<li id="menu-item-3013" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3013 "><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/forum-functions/">Forum rules and functions</a></li>
+</ul>
+</li>
+<li id="menu-item-3008" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3008 "><a title="GDL Sites" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/gdl-related-sites/">GDL Sites</a></li>
+			</ul>
+
+			<form action="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/" class="navbar-form navbar-right" data-role-search role="search">
+				<div class="input-group">
+					<input name="s" class="form-control" type="text" required="required" placeholder="Search…"/>
+
+					<span class="input-group-btn">
+						<button type="submit" class="btn btn-inverse">
+							<span class="sr-only">Submit</span>
+							<span class="glyphicon glyphicon-search aligned" aria-hidden="true"></span>
+						</button>
+					</span>
+				</div>
+			</form>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a class="dropdown-toggle" href="index.html#" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-th aligned trans" aria-hidden="true"></span></a>
+
+										<ul class="dropdown-menu">
+<li id="menu-item-3031" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3031"><a href="https://web.archive.org/web/20250512053856/https://graphisoft.com/">Graphisoft</a></li>
+<li id="menu-item-3032" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3032"><a href="https://web.archive.org/web/20250512053856/https://archicad.com/">Archicad</a></li>
+<li id="menu-item-3033" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3033"><a href="https://web.archive.org/web/20250512053856/https://archicadapi.graphisoft.com/">Archicad API</a></li>
+<li id="menu-item-3034" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3034"><a href="https://web.archive.org/web/20250512053856/https://helpcenter.graphisoft.com/">Help Center</a></li>
+<li id="menu-item-3037" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3037"><a href="https://web.archive.org/web/20250512053856/https://bimcomponents.com/">BIMComponents</a></li>
+<li id="menu-item-3038" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3038"><a href="https://web.archive.org/web/20250512053856/https://www.facebook.com/archicad">Facebook/AC</a></li>
+<li id="menu-item-3039" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3039"><a href="https://web.archive.org/web/20250512053856/https://www.youtube.com/user/Archicad">Youtube/AC</a></li>
+<li id="menu-item-3040" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3040"><a href="https://web.archive.org/web/20250512053856/https://bimx.graphisoft.com/">BIMx Model Transfer</a></li>
+<li id="menu-item-3041" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3041"><a href="https://web.archive.org/web/20250512053856/https://myarchicad.com/">Graphisoft Educational Licenses</a></li>
+<li id="menu-item-3042" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3042"><a href="https://web.archive.org/web/20250512053856/https://archicad-talk.graphisoft.com/">Community</a></li>
+					</ul>
+									</li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+<li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/auth/signup">Sign up</a></li></li><li class="divider-dot"><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/auth/signin">Sign in</a></li></li>			</ul>
+		</div>
+	</div>
+</nav>
+
+
+</div>
+
+<main class="container-fluid">
+	<div class="row XXXrow-flex">
+		<div class="col-sm-4 col-md-3 sidebar " role="complementary">
+
+<!-- <div class="sidebar-toggle text-center">
+	<a href="#"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span></a>
+</div> -->
+
+<div class="sidebar-content">
+	<nav class="nav-menu-sidebar hidden-print XXXhidden-sm XXXhidden-xs">
+		<h5 class="small block-title">Navigation in Reference Guide</h5>
+
+		<ul class="nav nav-sidebar">
+<li class="cat-item cat-item-251"><a data-bs-toggle="collapse" href="index.html#gdl_reference_guide_chaptergeneral-overview">1. General overview<span class="text-muted glyphicon glyphicon-menu-down aligned" aria-hidden="true"></span></a>
+<div id="gdl_reference_guide_chaptergeneral-overview" class="toc-chapter-main-content collapse "><ul class="list-unstyled small "><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/gdl-definition/">GDL and Library Parts Definition</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/starting-out/">Starting Out</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/scripting/">Scripting</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/3d-generation/">3D Generation</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/interpreting-and-analyzing-scripts/">Interpreting and analyzing scripts</a></li></ul></div>
+</li>
+<li class="cat-item cat-item-252"><a data-bs-toggle="collapse" href="index.html#gdl_reference_guide_chaptergdl-syntax">2. GDL Syntax<span class="text-muted glyphicon glyphicon-menu-down aligned" aria-hidden="true"></span></a>
+<div id="gdl_reference_guide_chaptergdl-syntax" class="toc-chapter-main-content collapse "><ul class="list-unstyled small "><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/rules-of-gdl-syntax/">Rules of GDL Syntax</a></li></ul></div>
+</li>
+<li class="cat-item cat-item-253"><a data-bs-toggle="collapse" href="index.html#gdl_reference_guide_chaptercoordinate-transformations">3. Coordinate Transformations<span class="text-muted glyphicon glyphicon-menu-down aligned" aria-hidden="true"></span></a>
+<div id="gdl_reference_guide_chaptercoordinate-transformations" class="toc-chapter-main-content collapse "><ul class="list-unstyled small "><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/coordinate-transformations/">Coordinate Transformations in General</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/2d-transformations/">2D Transformations</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/3d-transformations/">3D Transformations</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/managing-the-transformation-stack/">Managing the Transformation Stack</a></li></ul></div>
+</li>
+<li class="cat-item cat-item-254"><a data-bs-toggle="collapse" href="index.html#gdl_reference_guide_chapter3d-shapes">4. 3D Shapes<span class="text-muted glyphicon glyphicon-menu-down aligned" aria-hidden="true"></span></a>
+<div id="gdl_reference_guide_chapter3d-shapes" class="toc-chapter-main-content collapse "><ul class="list-unstyled small "><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/3d-shapes/">3D Shapes Introduction</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/basic-shapes/">Basic Shapes</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/planar-shapes-in-3d/">Planar Shapes in 3D</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/shapes-generated-from-polylines/">Shapes Generated from Polylines</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/elements-for-visualization/">Elements for Visualization</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/3d-text-elements/">3D Text Elements</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/point-clouds/">Point Clouds</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/cutting-in-3d/">Cutting in 3D</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/solid-geometry-commands/">Solid Geometry Commands</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/binary-3d/">Binary 3D</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/primitive-elements/">Primitive Elements</a></li></ul><ul class="list-unstyled nav-sidebar-level"><li class="cat-item cat-item-264"><span class="toc-chapter-sub small"><u>NURBS</u></span>
+<ul class="list-unstyled small toc-titles-sub"><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/nurbs-primitive-elements/">NURBS Primitive Elements</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/nurbs-face-trimming/">NURBS Face Trimming</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/nurbs-geometry-commands/">NURBS Geometry commands</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/nurbs-topology-commands/">NURBS Topology commands</a></li></ul></li>
+</ul></div>
+</li>
+<li class="cat-item cat-item-255"><a data-bs-toggle="collapse" href="index.html#gdl_reference_guide_chapter2d-shapes">5. 2D Shapes<span class="text-muted glyphicon glyphicon-menu-down aligned" aria-hidden="true"></span></a>
+<div id="gdl_reference_guide_chapter2d-shapes" class="toc-chapter-main-content collapse "><ul class="list-unstyled small "><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/2d-shapes/">2D Shapes Introduction</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/drawing-elements/">Drawing Elements</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/text-element/">Text Element</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/binary-2d/">Binary 2D</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/3d-projections-in-2d/">3D Projections in 2D</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/drawings-in-the-list/">Drawings in the List</a></li></ul></div>
+</li>
+<li class="cat-item cat-item-256"><a data-bs-toggle="collapse" href="index.html#gdl_reference_guide_chaptergraphical-editing-using-hotspots">6. Graphical Editing Using Hotspots<span class="text-muted glyphicon glyphicon-menu-down aligned" aria-hidden="true"></span></a>
+<div id="gdl_reference_guide_chaptergraphical-editing-using-hotspots" class="toc-chapter-main-content collapse "><ul class="list-unstyled small "><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/graphical-editing-using-hotspots/">Graphical Editing Using Hotspots</a></li></ul></div>
+</li>
+<li class="cat-item cat-item-257"><a data-bs-toggle="collapse" href="index.html#gdl_reference_guide_chapterstatus-codes">7. Status Codes<span class="text-muted glyphicon glyphicon-menu-down aligned" aria-hidden="true"></span></a>
+<div id="gdl_reference_guide_chapterstatus-codes" class="toc-chapter-main-content collapse "><ul class="list-unstyled small "><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/status-codes/">Status Codes in General</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/status-code-syntax/">Status Code Syntax</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/additional-status-codes/">Additional Status Codes</a></li></ul></div>
+</li>
+<li class="cat-item cat-item-258"><a data-bs-toggle="collapse" href="index.html#gdl_reference_guide_chapterattributes">8. Attributes<span class="text-muted glyphicon glyphicon-menu-down aligned" aria-hidden="true"></span></a>
+<div id="gdl_reference_guide_chapterattributes" class="toc-chapter-main-content collapse "><ul class="list-unstyled small "><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/attributes/">Attributes</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/directives/">Directives</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/inline-attribute-definition/">Inline Attribute Definition</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/external-file-dependence/">External file dependence</a></li></ul></div>
+</li>
+<li class="cat-item cat-item-259 active current-cat"><a data-bs-toggle="collapse" href="index.html#gdl_reference_guide_chapternon-geometric-scripts">9. Non-Geometric Scripts<span class="text-muted glyphicon glyphicon-menu-down aligned" aria-hidden="true"></span></a>
+<div id="gdl_reference_guide_chapternon-geometric-scripts" class="toc-chapter-main-content collapse in"><ul class="list-unstyled small "><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/non-geometric-scripts/">Non-Geometric Scripts</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/the-properties-script/">The Properties Script</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/the-parameter-script/">The Parameter Script</a></li><li class="active"><a href="index.html">The User Interface Script</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/the-forward-migration-script/">The Forward Migration Script</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/the-backward-migration-script/">The Backward Migration Script</a></li></ul></div>
+</li>
+<li class="cat-item cat-item-260"><a data-bs-toggle="collapse" href="index.html#gdl_reference_guide_chapterexpressions-and-functions">10. Expressions and Functions<span class="text-muted glyphicon glyphicon-menu-down aligned" aria-hidden="true"></span></a>
+<div id="gdl_reference_guide_chapterexpressions-and-functions" class="toc-chapter-main-content collapse "><ul class="list-unstyled small "><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/expressions-and-functions/">Expressions and Functions in GDL</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/expressions/">Expressions</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/operators/">Operators</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/functions/">Functions</a></li></ul></div>
+</li>
+<li class="cat-item cat-item-261"><a data-bs-toggle="collapse" href="index.html#gdl_reference_guide_chaptercontrol-statements">11. Control Statements<span class="text-muted glyphicon glyphicon-menu-down aligned" aria-hidden="true"></span></a>
+<div id="gdl_reference_guide_chaptercontrol-statements" class="toc-chapter-main-content collapse "><ul class="list-unstyled small "><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/control-statements/">Control Statements</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/flow-control-statements/">Flow Control Statements</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/parameter-buffer-manipulation/">Parameter Buffer Manipulation</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/macro-objects/">Macro Objects</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/output-in-an-alert-box-or-report-window/">Output in an Alert Box or Report Window</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/file-operations/">File Operations</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/using-deterministic-add-ons/">Using Deterministic Add-Ons</a></li></ul></div>
+</li>
+<li class="cat-item cat-item-262"><a data-bs-toggle="collapse" href="index.html#gdl_reference_guide_chaptermiscellaneous">12. Miscellaneous<span class="text-muted glyphicon glyphicon-menu-down aligned" aria-hidden="true"></span></a>
+<div id="gdl_reference_guide_chaptermiscellaneous" class="toc-chapter-main-content collapse "><ul class="list-unstyled small "><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/doors-and-windows/">Doors and Windows</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/autotext-guide/">Autotext Guide</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/built-in-property-guide/">Built-in property guide</a></li><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/keywords/">Keywords</a></li></ul><ul class="list-unstyled nav-sidebar-level"><li class="cat-item cat-item-265"><span class="toc-chapter-sub small"><u>Global Variables</u></span>
+<ul class="list-unstyled small toc-titles-sub"><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/global-variables/">Global Variables</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/general-object-parameters/">General Libpart Parameters</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/column-beam-and-slab-parameters/">Column, Beam and Slab Parameters</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/fly-through-information/">Fly-through Information</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/opening-parameters/">Opening parameters</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/marker-parameters/">Marker Parameters</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/label-parameters/">Label Parameters</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/revisioning-parameters/">Revision Parameters</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/mesh-parameters/">Mesh Parameters</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/roof-shell-skylight-parameters/">Roof, Shell and Skylight Parameters</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/curtain-wall-parameters/">Curtain Wall Parameters</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/morph-parameters/">Morph Parameters</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/deprecated-global-variables/">Deprecated Global Variables</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/wall-door-window-and-wall-end-parameters/">Wall, Door, Window and Wall-end Parameters</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/stair-parameters/">Stair Parameters</a></li></ul></li>
+<li class="cat-item cat-item-266"><span class="toc-chapter-sub small"><u>Requests and Application Queries</u></span>
+<ul class="list-unstyled small toc-titles-sub"><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/request-options/">REQUEST Options</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/application-query-options/">Application Query Options</a></li></ul></li>
+<li class="cat-item cat-item-267"><span class="toc-chapter-sub small"><u>Fixed Named Optional Parameters</u></span>
+<ul class="list-unstyled small toc-titles-sub"><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/fix-named-optional-parameters/">Fix named optional parameters</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/parameters-set-by-archicad/">Parameters set by ARCHICAD</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/general-parameters/">General Parameters</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/dw-params/">Door-window Parameters</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/parameters-for-wall-attributes/">Parameters for Wall Attributes</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/parameters-for-column-beam-and-roof-attributes/">Parameters for Column, Beam and Roof Attributes</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/doorwindow-parameters-for-markers/">Door and Window Parameters for Markers</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/detailworksheet-marker-attributes/">Detail and Worksheet Marker Attributes</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/room-parameters/">Room Parameters</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/drawing-title-attributes/">Drawing Title Attributes</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/parameters-read-by-archicad/">Parameters read by ARCHICAD</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/parameters-for-stair/">Parameters for Stair</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/parameters-for-curtain-wall/">Parameters for Curtain Wall</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/parameters-for-text-handling/">Parameters for Text Handling</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/parameters-for-labels/">Parameters for Labels</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/parameters-for-add-ons/">Parameters for add-ons</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/deprecated-parameters/">Deprecated parameters</a></li></ul></li>
+<li class="cat-item cat-item-268"><span class="toc-chapter-sub small"><u>GDL addons</u></span>
+<ul class="list-unstyled small toc-titles-sub"><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/gdl-data-io-add-on/">GDL Data I/O Add-On</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/gdl-datetime-add-on/">GDL Datetime Add-On</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/gdl-file-manager-io-add-on/">GDL File Manager I/O Add-On</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/gdl-text-io-add-on/">GDL Text I/O Add-On</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/property-gdl-add-on/">Property GDL Add-On</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/gdl-xml-extension/">GDL XML Extension</a></li><li class="">— <a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/polygon-operations-extension/">Polygon Operations Extension</a></li></ul></li>
+</ul></div>
+</li>
+<li class="cat-item cat-item-263"><a data-bs-toggle="collapse" href="index.html#gdl_reference_guide_chapterindex">13. Index<span class="text-muted glyphicon glyphicon-menu-down aligned" aria-hidden="true"></span></a>
+<div id="gdl_reference_guide_chapterindex" class="toc-chapter-main-content collapse "><ul class="list-unstyled small "><li class=""><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/index/">List of all GDL commands and keywords</a></li></ul></div>
+</li>
+		</ul>
+	</nav>
+</div>
+
+<div class="sidebar-toggle text-center">
+	<a href="index.html#"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span></a>
+</div>
+
+
+		</div>
+
+		<div class="col-sm-8 col-sm-offset-4 col-md-9 col-md-offset-3" role="main">
+			<div class="row api-reference gdl-post-type">
+				<div class="col-md-8 col-md-offset-2">
+					<ul class="nav nav-breadcrumb small"><li role="presentation"><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide">Reference Guide</a></li>		<li role="presentation">
+			<a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/gdl_reference_guide_chapter/non-geometric-scripts/">9. Non-Geometric Scripts</a>
+		</li>
+	<li role="presentation"><span>The User Interface Script</span></li></ul>					
+					<article id="post-873" class="article post-873 gdl_reference_guide type-gdl_reference_guide status-publish hentry gdl_reference_guide_chapter-non-geometric-scripts">
+	<header class="entry-header">
+		<h2 class="entry-title">
+		The User Interface Script		</h2>
+
+			</header>
+
+	
+
+
+	<div class="entry-content">
+		
+		
+
+		<p><a name="TheUserInterfaceScript_section"></a><br/>
+Using the following GDL commands, you can define a custom interface for a Library Part’s Custom Settings panel in the settings dialog box.<br/>
+If you click the <span class="italic">Set as default</span> button in the Library Part editor,<br/>
+the custom interface will be used by default in the Object’s (Door’s, Window’s, etc.) settings dialog box.<br/>
+Parameters with custom control are not hidden automatically on the original parameter list,<br/>
+but they can be hidden manually in the library part editor.</p>
+<p>Library part with User Interface (and Parameters list):<br/>
+<a title="GDLManual_uiActive" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_uiActive.png"><img fetchpriority="high" decoding="async" width="468" height="113" class="alignnone size-full wp-image-1433 imgborder" title="GDLManual_uiActive" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_uiActive.png" alt="GDLManual_uiActive" srcset="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_uiActive.png 468w, https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_uiActive-300x72.png 300w" sizes="(max-width: 468px) 100vw, 468px"/></a></p>
+<p>Library part with no UI and locked Parameters list:<br/>
+<a title="GDLManual_uiPassive" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_uiPassive.png"><img decoding="async" width="469" height="113" class="alignnone size-full wp-image-1434 imgborder" title="GDLManual_uiPassive" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_uiPassive.png" alt="GDLManual_uiPassive" srcset="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_uiPassive.png 469w, https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_uiPassive-300x72.png 300w" sizes="(max-width: 469px) 100vw, 469px"/></a></p>
+<p>The origin of the coordinate system is in the top-left corner. Sizes and coordinate values are measured in pixels.</p>
+<h3 id="UI_DIALOG_gdlcommand">UI_DIALOG</h3>
+<pre class="programlisting"><b id="UI_DIALOG_keyword_2.12.5.5.4.1">UI_DIALOG</b> title [, size_x, size_y]</pre>
+<p>Defines the title of the dialog box. The default title is &#8216;Custom Settings&#8217;.<br/>
+Currently, the size of the available area is fixed at 444 x 296 pixels, and the size_x and size_y parameters are not used.</p>
+<p>Restriction: The Interface Script should contain only one UI_DIALOG command.</p>
+<h3 id="UI_PAGE_gdlcommand">UI_PAGE</h3>
+<pre class="programlisting"><b id="UI_PAGE_keyword_2.12.5.6.4.1">UI_PAGE</b> page_number [, parent_id, page_title [, image]]</pre>
+<p>Page directive, defines the page that the interface elements are placed on. Default page numbering starts at 1, but any starting number is usable.<br/>
+If there is no UI_PAGE command in the Interface Script, each element will be displayed on the first page by default.<br/>
+Moving between pages can be defined in different ways:</p>
+<div class="itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">The easiest way is to let do it:<br/>
+in the object editor, press the &#8220;Hierarchical Pages&#8221; button in the User Interface Script window, and fill in the optional parameters of the UI_PAGE command.<br/>
+In this case the page_number of the page selected from the tree is passed to the library part through the &#8220;gs_ui_current_page&#8221; parameter. No need to set a value list for the paging parameter:<br/>
+collects and sorts all valid page ID-s from the UI_PAGE command&#8217;s parameters by pre-reading the object&#8217;s ui script.</li>
+<li class="listitem">Another method is to use two buttons created with the UI_NEXT and UI_PREV commands, placing them on every page to manipulate the value of the &#8220;gs_ui_current_page&#8221; parameter.<br/>
+See <a class="xref" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/?p=873#UI_BUTTON_gdlcommand">the UI_BUTTON command</a> for more information.</li>
+<li class="listitem">In case the new hierarchical page setup is not required, to create dynamic page handling, use the <a class="xref" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/?p=873#UI_INFIELD3_gdlcommand">the UI_INFIELD{3} command</a>.<br/>
+Set a value list for &#8220;gs_ui_current_page&#8221; parameter, and place a popup using its values on every page.</li>
+</ul>
+</div>
+<div>
+<div><code><b>page_number: </b></code>the page number, a positive integer. Following interface elements are placed on this page.</div>
+</div>
+<div>
+<div><code><b>parent_id: </b></code>positive integer, the parent id of the page. The special value -1 value means root parent. Only evaluated if &#8220;Hierarchical Pages&#8221; is set.</div>
+</div>
+<div>
+<div><code><b>page_title: </b></code>title string of the page, appears on the top of the page and the tree view popup of the pages. Only evaluated if &#8220;Hierarchical Pages&#8221; is set.</div>
+</div>
+<div>
+<div><code><b>image: </b></code>file name or index number of a picture stored in the library part. If specified and not empty or 0, this icon associated<br/>
+to the page is displayed on the top of the page and in tree view popup of the pages, next to the title. Only evaluated if &#8220;Hierarchical Pages&#8221; is set.</div>
+</div>
+<p>Warning: In the simple way of paging, any break of continuity in the page numbering forces the insertion of a new page without buttons,<br/>
+and therefore there will be no possibility to go to any other page from there.<br/>
+This restriction can be circumvented using <a class="xref" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/?p=873#UI_CURRENT_PAGE_gdlcommand">the UI_CURRENT_PAGE command</a>.</p>
+<h3 id="UI_CURRENT_PAGE_gdlcommand">UI_CURRENT_PAGE</h3>
+<pre class="programlisting"><b id="UI_CURRENT_PAGE_keyword_2.12.5.7.4.1">UI_CURRENT_PAGE</b> index</pre>
+<p>Definition of the current tabpage to display.</p>
+<p>Warning: Jumping to a non-existent page forces the insertion of a new page without buttons and controls,<br/>
+and therefore there is no possibility to go to any other page from there.</p>
+<div>
+<div><code><b>index: </b></code>valid index of the UI_PAGE to display.</div>
+</div>
+<h3 id="UI_BUTTON_gdlcommand">UI_BUTTON</h3>
+<pre class="programlisting"><b id="UI_BUTTON_keyword_2.12.5.8.4.1">UI_BUTTON</b> type, text, x, y [, width, height, id [, url]]</pre>
+<p>Button definition on current page. Buttons can be used for various purposes:<br/>
+moving from page to page, opening a web page or performing some parameter-script defined action.<br/>
+Buttons can contain text.</p>
+<div>
+<div><code><b>type: </b></code>type of the button as follows:</div>
+<div><code>UI_PREV: </code>if pressed, the previous page is displayed,</div>
+<div><code>UI_NEXT: </code>if pressed, the next page is displayed,</div>
+<div><code>UI_FUNCTION: </code>if pressed, the GLOB_UI_BUTTON_ID global variable is set to the button id specified in expression,</div>
+<div><code>UI_LINK: </code>if pressed, the URL in expression is opened in the default web browser,</div>
+</div>
+<div>
+<div><code><b>text: </b></code>the text that should appear on the button.</div>
+</div>
+<div>
+<div><code><b>x, y: </b></code>the position of the button.</div>
+</div>
+<div>
+<div><code><b>width, height: </b></code>width and height of the button in pixels.<br/>
+If not specified (for compatibility reasons) the default values are 60 pixels for width and 20 pixels for height.</div>
+</div>
+<div>
+<div><code><b>id: </b></code>an integer unique identifier.</div>
+</div>
+<div>
+<div><code><b>url: </b></code>a string containing a URL.</div>
+</div>
+<p>UI_PREV and UI_NEXT buttons are disabled if the previous/next page is not present.<br/>
+If these buttons are pushed, the gs_ui_current_page parameter of the library part is set<br/>
+to the index of the page to show &#8211; if there’s a parameter with this name.</p>
+<div class="example">
+<p><a name="idm7976841488"></a></p>
+<p class="title"><b>Example:<br/>
+</b></p>
+<div class="example-contents">
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">! UI script
+UI_CURRENT_PAGE gs_ui_current_page
+UI_BUTTON UI_FUNCTION, "Go to page 9", 200,150, 70,20, 3
+UI_BUTTON UI_LINK, "Visit Website", 200,180, 100,20, 0,
+        "https://www.graphisoft.com"
+! parameter script
+if GLOB_UI_BUTTON_ID = 3 then
+        parameters gs_ui_current_page = 9, ...
+endif</pre>
+</div>
+<p>&nbsp;</p>
+</div>
+<p><a name="idm7976841488"></a></p>
+<h3 id="UI_PICT_BUTTON_gdlcommand">UI_PICT_BUTTON</h3>
+<pre class="programlisting"><b id="UI_PICT_BUTTON_keyword_2.12.5.9.4.1">UI_PICT_BUTTON</b> type, text, picture_reference,
+        x, y, width, height [, id [, url]]</pre>
+<p><a name="idm7976841488"></a><br/>
+Similar to <a class="xref" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/?p=873#UI_BUTTON_gdlcommand">the UI_BUTTON command</a>. But this type of buttons can contain pictures.</p>
+<div>
+<div><code><b>picture_reference: </b></code><br/>
+file name or index number of the picture stored in the library part.<br/>
+The index 0 refers to the preview picture of the library part.<br/>
+Pixel transparency is allowed in the picture.</div>
+</div>
+<div>
+<div><code><b>text: </b></code><br/>
+has no effect for picture buttons.</div>
+</div>
+<h3 id="UI_SEPARATOR_gdlcommand">UI_SEPARATOR</h3>
+<pre class="programlisting"><b id="UI_SEPARATOR_keyword_2.12.5.10.4.1">UI_SEPARATOR</b> x1, y1, x2, y2</pre>
+<p>Generates a separator rectangle. The rectangle becomes a single (vertical or horizontal) separator line if x1 = x2 or y1 = y2</p>
+<div>
+<div><code><b>x1, y1: </b></code>upper left node coordinates (starting point coordinates of the line).</div>
+</div>
+<div>
+<div><code><b>x2, y2: </b></code>lower right node coordinates (endpoint coordinates of the line).</div>
+</div>
+<h3 id="UI_GROUPBOX_gdlcommand">UI_GROUPBOX</h3>
+<pre class="programlisting"><b id="UI_GROUPBOX_keyword_2.12.5.11.4.1">UI_GROUPBOX</b> text, x, y, width, height</pre>
+<p>A groupbox is a rectangular separator with caption text. It can be used to visually group logically related parameters.</p>
+<div>
+<div><code><b>text: </b></code>the title of the groupbox.</div>
+</div>
+<div>
+<div><code><b>x, y: </b></code>the position of upper left corner.</div>
+</div>
+<div>
+<div><code><b>width, height: </b></code>width and height in pixels.</div>
+</div>
+<h3 id="UI_PICT_gdlcommand">UI_PICT</h3>
+<pre class="programlisting"><b id="UI_PICT_keyword_2.12.5.12.4.1">UI_PICT</b> picture_reference, x, y [, width, height [, mask]]</pre>
+<p>Picture element in the dialog box. The picture file must be located in one of the loaded libraries.</p>
+<div>
+<div><code><b>picture_reference: </b></code><br/>
+file name or index number of the picture stored in the library part.<br/>
+The index 0 refers to the preview picture of the library part.</div>
+</div>
+<div>
+<div><code><b>x, y: </b></code>position of the top left corner of the picture.</div>
+</div>
+<div>
+<div><code><b>width, height: </b></code>optional width and height in pixels; by default, the picture’s original width and height values will be used.</div>
+</div>
+<div>
+<div><code><b>mask: </b></code>alpha + distortion.</div>
+</div>
+<p><span class="italic">See <a class="xref" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/?p=849#PICTURE_gdlcommand">the PICTURE command</a> for full explanation.</span></p>
+<h3 id="UI_STYLE_gdlcommand">UI_STYLE</h3>
+<pre class="programlisting"><b id="UI_STYLE_keyword_2.12.5.13.4.1">UI_STYLE</b> fontsize, face_code</pre>
+<p>All the UI_OUTFIELDs and UI_INFIELDs generated after this keyword will represent this style until the next UI_STYLE statement.</p>
+<div>
+<div><code><b>fontsize: </b></code>one of the following font size values:</div>
+<div><code>0: </code>small,</div>
+<div><code>1: </code>extra small,</div>
+<div><code>2: </code>large.</div>
+</div>
+<div>
+<div><code><b>face_code: </b></code>similar to <a class="xref" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/?p=868#DEFINESTYLE_gdlcommand">the DEFINE STYLE command</a>, but the values cannot be used in combination.</div>
+<div><code>0: </code>normal,</div>
+<div><code>1: </code>bold,</div>
+<div><code>2: </code>italic,</div>
+<div><code>4: </code>underline.</div>
+</div>
+<h3 id="UI_OUTFIELD_gdlcommand">UI_OUTFIELD</h3>
+<pre class="programlisting"><b id="UI_OUTFIELD_keyword_2.12.5.14.4.1">UI_OUTFIELD</b> expression, x, y [, width, height [, flags]]</pre>
+<p>Generates a static text.</p>
+<div>
+<div><code><b>expression: </b></code>numerical or string expression.</div>
+</div>
+<div>
+<div><code><b>x, y: </b></code>position of the text block’s top left corner.</div>
+</div>
+<div>
+<div><code><b>width, height: </b></code>width and height of the text box.<br/>
+If omitted, the text box will wrap around the text as tight as possible for the given font.</div>
+</div>
+<div>
+<div><code><b>flags: </b></code></div>
+<div><code>flags = j<sub>1</sub> + 2*j<sub>2</sub> + 4*j<sub>3</sub></code>, where each j can be 0 or 1.</div>
+<div><code>j<sub>1</sub>: </code>horizontal alignment (with j2),</div>
+<div><code>j<sub>2</sub>: </code>horizontal alignment (with j1):</div>
+<p><code class="literal">j1 = 0, j2 = 0:</code> Aligns to the left edge (default),</p>
+<p><code class="literal">j1 = 1, j2 = 0:</code> Aligns to the right edge,</p>
+<p><code class="literal">j1 = 0, j2 = 1:</code> Aligns to the center,</p>
+<p><code class="literal">j1 = 1, j2 = 1:</code> Not used,</p>
+<div><code>j<sub>3</sub>: </code>grayed text.</div>
+</div>
+<h3 id="UI_INFIELD_gdlcommand">UI_INFIELD</h3>
+<pre class="programlisting"><b id="UI_INFIELD_keyword_2.12.5.15.4.1">UI_INFIELD</b> "name", x, y, width, height [,
+        method, picture_name,
+        images_number,
+        rows_number, cell_x, cell_y,
+        image_x, image_y,
+        expression_image1, text1,
+        ...
+        expression_imagen, textn]</pre>
+<h3 id="UI_INFIELD2_gdlcommand">UI_INFIELD{2}</h3>
+<pre class="programlisting"><b id="UI_INFIELD2_keyword_2.12.5.16.4.1">UI_INFIELD{2}</b> name, x, y, width, height [,
+        method, picture_name,
+        images_number,
+        rows_number, cell_x, cell_y,
+        image_x, image_y,
+        expression_image1, text1,
+        ...
+        expression_imagen, textn]</pre>
+<h3 id="UI_INFIELD3_gdlcommand">UI_INFIELD{3}</h3>
+<pre class="programlisting"><b id="UI_INFIELD3_keyword_2.12.5.17.4.1">UI_INFIELD{3}</b> name, x, y, width, height [,
+        method, picture_name,
+        images_number,
+        rows_number, cell_x, cell_y,
+        image_x, image_y,
+        expression_image1, text1, value_definition1,
+        ...
+        [picIdxArray, textArray, valuesArray,
+        ...]
+        expression_imagen, textn, value_definitionn]</pre>
+<h3 id="UI_INFIELD4_gdlcommand">UI_INFIELD{4}</h3>
+<pre class="programlisting"><b id="UI_INFIELD4_keyword_2.12.5.18.4.1">UI_INFIELD{4}</b> "name", x, y, width, height [,
+        method, picture_name,
+        images_number,
+        rows_number, cell_x, cell_y,
+        image_x, image_y,
+        expression_image1, text1, value_definition1,
+        ...
+        [picIdxArray, textArray, valuesArray,
+        ...]
+        expression_imagen, textn, value_definitionn]</pre>
+<p>Generates an edit text or a pop-up menu for the parameter input.<br/>
+A pop-up is generated if the parameter type is value list, material, fill, line type or pencolor.</p>
+<p>If the optional parameters of the command are present, value lists can be alternatively displayed as thumbnail view fields.<br/>
+Different thumbnail control types are available.<br/>
+They display the specified images and associated texts and allow the selection of one single item at a time, just like in a pop-up menu.</p>
+<p>In the version 1 and 2 infield, the thumbnail items and the value list items are associated by indices.</p>
+<p>The version 3 and version 4 infield defines value association which binds the thumbnail items to value list items of the associated parameter.<br/>
+If a value defined in a thumbnail item isn’t present in the parameter’s value list, it won’t be displayed in the control.<br/>
+Identical sized arrays can be used for lines of definition as well.</p>
+<p>The Interface Script is rebuilt with the new value after any parameter is modified.</p>
+<div>
+<div><code><b>name: </b></code><br/>
+parameter name as string expression for UI_INFIELD and UI_INFIELD{4} or<br/>
+parameter name with optional actual index values if array for UI_INFIELD{2} and UI_INFIELD{3}.</div>
+</div>
+<div>
+<div><code><b>x, y: </b></code>the position of the edit text, pop-up or control.</div>
+</div>
+<div>
+<div><code><b>width, height: </b></code>width and height in pixels.</div>
+</div>
+<div>
+<div><code><b>method: </b></code>the type of the control.</div>
+<div><code>1: </code>List view control.</div>
+<p><a title="GDLManual_UI_ListviewControl" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_UI_ListviewControl.png"><img decoding="async" width="153" height="228" class="alignnone size-full wp-image-1438 imgborder" title="GDLManual_UI_ListviewControl" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_UI_ListviewControl.png" alt="GDLManual_UI_ListviewControl"/></a></p>
+<div><code>2: </code>Popup menu control.</div>
+<div><img decoding="async" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/NonGeom_infield3_method2_Popup_menu_control.png" alt="https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/NonGeom_infield3_method2_Popup_menu_control.png"/></div>
+<div><code>3: </code>Popup icon radio control (arrow overlays picture area).</div>
+<div><img decoding="async" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/NonGeom_infield3_method3_popupIconRadioControl_ArrowOnPic.png" alt="https://gdl.graphisoft.com/wp-content/uploads/NonGeom_infield3_method3_popupIconRadioControl_ArrowOnPic.png"/></div>
+<div><code>4: </code>Push icon radio control.</div>
+<div><img decoding="async" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/NonGeom_infield3_method4_pushIconRadioControl.PNG" alt="https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/NonGeom_infield3_method4_pushIconRadioControl.PNG"/></div>
+<div><code>5: </code>Pushbutton with text.</div>
+<div><img decoding="async" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/NonGeom_infield3_method5_pushbuttonWithText.PNG" alt="https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/NonGeom_infield3_method5_pushbuttonWithText.PNG"/></div>
+<div><code>6: </code>Pushbutton with picture.</div>
+<div><img decoding="async" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/NonGeom_infield3_method6_pushButtonWithPicture.PNG" alt="https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/NonGeom_infield3_method6_pushButtonWithPicture.PNG"/></div>
+<div><code>7: </code>Checkbox with text.</div>
+<div><img decoding="async" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/NonGeom_infield3_method7_checkboxWithText.PNG" alt="https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/NonGeom_infield3_method7_checkboxWithText.PNG"/></div>
+<div><code>8: </code>Popup list with text.</div>
+<div><img decoding="async" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/NonGeom_infield3_method8_popupListWithText.PNG" alt="https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/NonGeom_infield3_method8_popupListWithText.PNG"/></div>
+<div><code>9: </code>Popup icon radio control (arrow is next to picture area).</div>
+<p><em style="color: #009980;">Compatibility: introduced in ARCHICAD 20.</em></p>
+<div><img decoding="async" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/NonGeom_infield3_method9_popupIconRadioControl_ArrowNextToPic.png" alt="https://gdl.graphisoft.com/wp-content/uploads/NonGeom_infield3_method9_popupIconRadioControl_ArrowNextToPic.png"/></div>
+</div>
+<div>
+<div><code><b>picture_name: </b></code>name of the common image file containing a matrix of concatenated images, or empty string.</div>
+</div>
+<div>
+<div><code><b>images_number: </b></code>number of images in the matrix, for boolean parameters it can be 0 or 2.</div>
+</div>
+<div>
+<div><code><b>rows_number: </b></code>number of rows of the matrix.</div>
+</div>
+<div>
+<div><code><b>cell_x, cell_y: </b></code>width and height of a cell within the thumbnail view field, including image and text.</div>
+</div>
+<div>
+<div><code><b>image_x, image_y: </b></code>width and height of the image in the cell.</div>
+</div>
+<div>
+<div><code><b>expression_imagei: </b></code><br/>
+index of image number i in the matrix, or individual file name.<br/>
+If a common image file name was specified, indices must be used here.<br/>
+Combination of indices and individual file names does not work.</div>
+</div>
+<div>
+<div><code><b>texti: </b></code>text in cell number i.</div>
+</div>
+<div>
+<div><code><b>value_definitioni: </b></code>value definition which matches the cell with a value list item by value:</div>
+<div><code>expression: </code>numerical or string expression, or</div>
+<div><code>CUSTOM: </code>keyword, meaning that any custom value can be entered.</div>
+</div>
+<div>
+<div><code><b>picIdxArray: </b></code>Dynamic array of picture names (strings) or indexes (integers) in cells. Do not use mixed types in array</div>
+</div>
+<div>
+<div><code><b>textArray: </b></code>Dynamic array of texts in cells</div>
+</div>
+<div>
+<div><code><b>valueArray: </b></code>Dynamic array of parameter values in cells</div>
+</div>
+<div class="example">
+<p><a name="idm7976741424"></a></p>
+<p class="title"><b>Example 1:<br/>
+</b></p>
+<div class="example-contents">
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">! Master script
+HOLE_RECTANGULAR = 1
+HOLE_CIRCULAR    = 2
+
+! Parameter script
+values{2} "iHoleType", HOLE_RECTANGULAR, `Rectangular`,
+			HOLE_CIRCULAR, `Circular`
+
+! UI script
+ui_style 0, 1
+ui_infield{3} "bShowHole", 15, 10, 180, 19,
+				7, "",
+				0, 0,
+				0, 0, 0, 0,
+				"", `Show Hole`, 0,
+				"", `Show Hole`, 1
+ui_style 0, 0
+
+if bShowHole then
+    ui_dialog `Hole Definition Parameters`
+    ui_outfield `Type of Hole`, 15, 40, 180, 15
+    ui_infield{3} "iHoleType", 190, 40, 105, 19,
+				8, "",
+				0, 0,
+				0, 0, 0, 0,
+				"", `Rectangular`, HOLE_RECTANGULAR,
+				"", `Circular`, HOLE_CIRCULAR
+
+    if iHoleType = HOLE_RECTANGULAR then
+        ui_pict "9738", 110, 65, 42, 23, 1
+
+        ui_outfield `Hole Width`, 15, 70, 180, 15
+        ui_infield "E", 190, 70, 105, 19
+
+        ui_outfield `Hole Height`, 15, 100, 180, 15
+        ui_infield "F", 190, 100, 105, 19
+
+        ui_outfield `Distance between Holes`, 15, 130, 180, 15
+        ui_infield "G", 190, 130, 105, 19
+    else
+        ui_pict "9735", 110, 65, 42, 23, 1
+
+        ui_outfield `Hole Diameter`,15, 70, 180, 15
+        ui_infield "J", 190, 70, 105, 19
+
+        ui_outfield `Hole Centers Distance`, 15, 100, 180, 15
+        ui_infield "K", 190, 100, 105, 19
+
+        ui_outfield `Hole Circle Resolution`, 15, 130, 180, 15
+        ui_infield "M", 190, 130, 105, 19
+    endif
+    ui_outfield `Number of Holes`, 15, 160, 180, 15
+    ui_infield "I", 190, 160, 105, 19
+endif
+ui_separator 0, 195, 444, 195
+ui_outfield `Beam Surface`, 15, 210, 180, 15
+ui_infield "matBeam", 190, 210, 105, 23
+ui_outfield `Beam Pen`, 15, 240, 180, 15
+ui_infield "penBeam", 190, 240, 33, 19</pre>
+<p><a title="GDLManual_ui_example1" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_ui_example1.png"><img loading="lazy" decoding="async" width="469" height="323" class="alignnone size-full wp-image-1435 imgborder" title="GDLManual_ui_example1" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_ui_example1.png" alt="GDLManual_ui_example1" srcset="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_ui_example1.png 469w, https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_ui_example1-300x207.png 300w" sizes="auto, (max-width: 469px) 100vw, 469px"/></a></p>
+<p><a title="GDLManual_ui_example2" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_ui_example2.png"><img loading="lazy" decoding="async" width="469" height="322" class="alignnone size-full wp-image-1436 imgborder" title="GDLManual_ui_example2" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_ui_example2.png" alt="GDLManual_ui_example2" srcset="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_ui_example2.png 469w, https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/GDLManual_ui_example2-300x206.png 300w" sizes="auto, (max-width: 469px) 100vw, 469px"/></a></p>
+<p class="title"><b>Example 2:<br/>
+</b></p>
+<div class="example-contents">
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">! Parameter Script:
+VALUES "myParameter" "Two", "Three", "Five", CUSTOM
+
+! Interface Script:
+px = 80
+py = 60
+cx = px + 3
+cy = py + 25
+
+UI_INFIELD{3} "myParameter", 10, 10, 4 * cx + 21, cy + 5,
+        1, "myPicture", 6,
+        1, cx, cy, px, py,
+        1, "1 - one", "One",
+        2, "2 - two", "Two",
+        3, "3 - three", "Three",
+        4, "4 - four", "Four",
+        5, "5 - five", "Five",
+        6, "custom value", CUSTOM</pre>
+</div>
+<p>&nbsp;</p>
+</div>
+<p><a name="idm7976735600"></a></p>
+<div class="example">
+<p><a name="idm7976735600"></a><a name="idm7976734400"></a></p>
+<p class="title"><b>Example 3:<br/>
+</b></p>
+<div class="example-contents">
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">! Parameter Script:
+VALUES "myParameter" "Two", "Three", "Five", CUSTOM
+
+! Interface Script:
+px = 80
+py = 60
+cx = px + 3
+cy = py + 25
+
+paramNameVar = "myParameter"
+UI_INFIELD{4} paramNameVar, 10, 10, 4 * cx + 21, cy + 5,
+        1, "myPicture", 6,
+        1, cx, cy, px, py,
+        1, "1 - one", "One",
+        2, "2 - two", "Two",
+        3, "3 - three", "Three",
+        4, "4 - four", "Four",
+        5, "5 - five", "Five",
+        6, "custom value", CUSTOM</pre>
+</div>
+<p>&nbsp;</p>
+</div>
+<p><a name="idm7976734400"></a></p>
+<div class="example">
+<p><a name="idm7976734400"></a><a name="idm7976733184"></a></p>
+<p class="title"><b>Example 4:<br/>
+</b></p>
+<div class="example-contents">
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">! Master Script
+dim picIdxValuesUI[]
+dim textValuesUI[]
+dim parameterValues[]
+
+if myTypeParameter = 1 then
+    picIdxValuesUI[1] = 6
+    picIdxValuesUI[2] = 7
+    picIdxValuesUI[3] = 8
+
+    textValuesUI[1] = "6 - six"
+    textValuesUI[2] = "7 - seven"
+    textValuesUI[3] = "8 - eight"
+
+    parameterValues[1] = "Six"
+    parameterValues[2] = "Seven"
+    parameterValues[3] = "Eight"
+else
+    picIdxValuesUI[1] = 6
+    picIdxValuesUI[2] = 7
+
+    textValuesUI[1] = "6 - six"
+    textValuesUI[2] = "7 - seven"
+
+    parameterValues[1] = "Six"
+    parameterValues[2] = "Seven"
+endif
+</pre>
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">! Parameter Script:
+VALUES "myTypeParameter" 1, 2
+VALUES "myStringParameter" "Two", "Three", "Five", parameterValues, CUSTOM
+
+! Interface Script:
+px = 80
+py = 60
+cx = px + 3
+cy = py + 25
+
+paramNameVar = "myStringParameter"
+UI_INFIELD{4} paramNameVar, 10, 10, 4 * cx + 21, cy + 5,
+        1, "myPicture", 6,
+        1, cx, cy, px, py,
+        1, "1 - one", "One",
+        2, "2 - two", "Two",
+        3, "3 - three", "Three",
+        4, "4 - four", "Four",
+        5, "5 - five", "Five",
+        picIdxValuesUI, textValuesUI, parameterValues,
+        9, "custom value", CUSTOM</pre>
+</div>
+<p>&nbsp;</p>
+</div>
+<h3 id="UI_CUSTOM_POPUP_INFIELD_gdlcommand">UI_CUSTOM_POPUP_INFIELD</h3>
+<pre class="programlisting"><b>UI_CUSTOM_POPUP_INFIELD</b> "name", x, y, width, height,
+        storeHiddenId, treeDepth,
+        groupingMethod, selectedValDescription
+        value1, value2, valuesArray1, .... valuen, valuesArrayn</pre>
+<h3 id="UI_CUSTOM_POPUP_INFIELD2_gdlcommand">UI_CUSTOM_POPUP_INFIELD{2}</h3>
+<p><span style="color: #009980;"><i><strong>Compatibility</strong>: introduced in ARCHICAD 20.</i></span></p>
+<pre class="programlisting"><b>UI_CUSTOM_POPUP_INFIELD{2}</b> name, x, y, width, height,
+        storeHiddenId, treeDepth,
+        groupingMethod, selectedValDescription
+        value1, value2, valuesArray1, .... valuen, valuesArrayn</pre>
+<p>Generates a popup for a value list of a parameter defined in the User Interface script to avoid using the Parameter script. Suitable for lists which can not be requested in Parameter script. For the parameter script restrictions see the <a style="color: #529be5;" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/request-options">REQUEST Options</a>.</p>
+<div><code><b>name: </b></code>parameter name as string expression for <code>UI_CUSTOM_POPUP_INFIELD</code> or parameter name with optional actual index values if array for <code>UI_CUSTOM_POPUP_INFIELD{2}</code>.</div>
+<div><code><b>x, y: </b></code>the position of the edit text, pop-up.</div>
+<div><code><b>width, height: </b></code>width and height in pixels.</div>
+<div><code><b>storeHiddenId, treeDepth: </b></code>to set up automatic or manual trees.<br/>
+<code>storeHiddenId = 0, treeDepth = 0: </code>works only with array parameters.<br/>
+The &#8220;treeDepth&#8221; parameter is set automatically by the second dimension (number of columns) of the array.<br/>
+<code>storeHiddenId = 1, treeDepth &gt; 0: </code>works only with single parameters.<br/>
+There must be <b>n * (1 + treeDepth)</b> values defined (first one for the stored ID and the rest for defining the custom tree).</div>
+<div><code><b>groupingMethod: </b></code>grouping method for sorting the tree.<br/>
+<code>1: </code>does not sort the groups and values under the same parent.<code><code></code></code><img decoding="async" class="aligncenter size-full wp-image-2405 imgborder" title="NonGeom_uiCustomPopupMethod1" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/NonGeom_uiCustomPopupMethod1.png" alt="NonGeom_uiCustomPopupMethod1"/><br/>
+2:</p>
+<p>sorts the groups and values under the same parent.</p></div>
+<p><img decoding="async" class="aligncenter size-full wp-image-2406 imgborder" title="NonGeom_uiCustomPopupMethod2" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/NonGeom_uiCustomPopupMethod2.png" alt="NonGeom_uiCustomPopupMethod2"/></p>
+<div><code><b>selectedValDescription: </b></code>the text written in the field, if empty string the text will be the stored ID of the selected item.</div>
+<div><code><b>valuei, valuesArrayi: </b></code>define tree values one-by-one and/or with a one dimension array.</div>
+<p>&nbsp;</p>
+<p class="title"><b>Example:<br/>
+</b></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">UI_CUSTOM_POPUP_INFIELD "stParameterName", x, y, width, height,
+    1, 3, 2, "",    ! storeHiddenId, treeDepth, groupingMethod, selectedValDescription
+    "hiddenID1",    "type1",    "group1",   "value1",
+    "hiddenID2",    "type1",    "group1",   "value2",
+    "hiddenID3",    "type2",    "group2",   "value1",
+    "hiddenID4",    "type2",    "group2",   "value2",
+    "hiddenID5",    "type2",    "",         "value3",
+    "hiddenID6",    "",         "",         "value4",
+    "hiddenID7",    "",         "",         "value5",
+</pre>
+<p><img decoding="async" class="aligncenter size-full wp-image-2407 imgborder" title="NonGeom_uiCustomPopupTree" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/NonGeom_uiCustomPopupTree.png" alt="NonGeom_uiCustomPopupTree"/></p>
+<p><a name="idm7976733184"></a></p>
+<h3 id="UI_RADIOBUTTON_gdlcommand">UI_RADIOBUTTON</h3>
+<pre class="programlisting"><b id="UI_RADIOBUTTON_keyword_2.12.5.19.4.1">UI_RADIOBUTTON</b> name, value, text, x, y, width, height</pre>
+<h3 id="UI_RADIOBUTTON2_gdlcommand">UI_RADIOBUTTON{2}</h3>
+<p><span style="color: #009980;"><i><strong>Compatibility</strong>: introduced in ARCHICAD 20.</i></span></p>
+<pre class="programlisting"><b id="UI_RADIOBUTTON_keyword_2.12.5.19.4.1">UI_RADIOBUTTON{2}</b> "name", value, text, x, y, width, height</pre>
+<p>Generates a radio button of a radio button group. Radio button groups are defined by the parameter name.<br/>
+Items in the same group are mutually exclusive.</p>
+<div>
+<div><code><b>name: </b></code>parameter name as string expression for UI_RADIOBUTTON{2} or parameter name with optional actual index values if array for UI_RADIOBUTTON.</div>
+</div>
+<div>
+<div><code><b>value: </b></code>parameter is set to this value if this radio button is set.</div>
+</div>
+<div>
+<div><code><b>text: </b></code>this text is displayed beside the radio button.</div>
+</div>
+<div>
+<div><code><b>x, y: </b></code>the position of the radio control.</div>
+</div>
+<div>
+<div><code><b>width, height: </b></code>width and height in pixels.</div>
+</div>
+<p>&nbsp;</p>
+<div class="example">
+<p><a name="idm7976733184"></a><a name="idm7976722848"></a></p>
+<p class="title"><b>Example:<br/>
+</b></p>
+<div class="example-contents">
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">UI_RADIOBUTTON "ceilingPlan", 0, `Floor Plan`, 10, 140, 100, 20
+UI_RADIOBUTTON "ceilingPlan", 1, `Ceiling Plan`, 10, 160, 100, 20</pre>
+<div><img decoding="async" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/NonGeom_uiRadiobutton.PNG" alt="https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/NonGeom_uiRadiobutton.PNG"/></div>
+</div>
+<p>&nbsp;</p>
+</div>
+<h3 id="UI_PICT_RADIOBUTTON_gdlcommand">UI_PICT_RADIOBUTTON</h3>
+<pre class="programlisting"><b id="UI_PICT_RADIOBUTTON_keyword">UI_PICT_RADIOBUTTON</b> name, value, text, 
+	picture_reference, x, y, width, height [UI_TOOLTIP tooltip]</pre>
+<h3 id="UI_PICT_RADIOBUTTON2_gdlcommand">UI_PICT_RADIOBUTTON{2}</h3>
+<pre class="programlisting"><b id="UI_PICT_RADIOBUTTON2_keyword">UI_PICT_RADIOBUTTON{2}</b> "name", value, text, 
+	picture_reference, x, y, width, height [UI_TOOLTIP tooltip]</pre>
+<p><span style="color: #009980;"><i><strong>Compatibility</strong>: introduced in ARCHICAD 22.</i></span><br/>
+Generates one radio button with icon of a radio button group. Radio button groups are defined by the parameter name.<br/>
+Items in the same group are mutually exclusive.</p>
+<div>
+<div><code><b>name: </b></code>parameter name or name as string expression for UI_PICT_RADIOBUTTON and parameter name as string expression (or text array indexed value) for UI_PICT_RADIOBUTTON{2}.</div>
+</div>
+<div>
+<div><code><b>value: </b></code>parameter is set to this value if this radio button is set.</div>
+</div>
+<div>
+<div><code><b>text: </b></code>this text is displayed on the button if no image is declared.</div>
+</div>
+<div><code><b>picture_reference: </b></code>file name or index number of the picture stored in the library part. The index 0 refers to the preview picture of the library part. Pixel transparency is allowed in the picture.</div>
+</div>
+<div>
+<div><code><b>x, y: </b></code>the position of the radio control (top left anchor).</div>
+</div>
+<div>
+<div><code><b>width, height: </b></code>width and height of the button in pixels. Image size is not declared individually: it should fit the button, as image is not stretched automatically to fit, and is centered on the button.</div>
+</div>
+<h3 id="UI_PICT_PUSHCHECKBUTTON_gdlcommand">UI_PICT_PUSHCHECKBUTTON</h3>
+<pre class="programlisting"><b id="UI_PICT_PUSHCHECKBUTTON_keyword">UI_PICT_PUSHCHECKBUTTON</b> name, text, picture_reference, 
+	frameFlag, x, y, width, height [UI_TOOLTIP tooltip]</pre>
+<h3 id="UI_PICT_PUSHCHECKBUTTON2_gdlcommand">UI_PICT_PUSHCHECKBUTTON{2}</h3>
+<pre class="programlisting"><b id="UI_PICT_PUSHCHECKBUTTON2_keyword">UI_PICT_PUSHCHECKBUTTON{2}</b> "name", text, picture_reference, 
+	frameFlag, x, y, width, height [UI_TOOLTIP tooltip]</pre>
+<p><span style="color: #009980;"><i><strong>Compatibility</strong>: introduced in ARCHICAD 22.</i></span><br/>
+Generates one pushcheck button with icon for a boolean parameter. Similar to <a href="https://web.archive.org/web/20250512053856/https://https//gdl.graphisoft.com/reference-guide/the-user-interface-script/#UI_INFIELD3_gdlcommand">UI_INFIELD{3} command</a> with method 6, with additional option to control the visibility of the button frame.</p>
+<div><code><b>name: </b></code>parameter name or name as string expression for UI_PICT_PUSHCHECKBUTTON and parameter name as string expression (or text array indexed value) for UI_PICT_PUSHCHECKBUTTON{2}.</div>
+<div>
+<div><code><b>text: </b></code>this text is displayed on the button if no image is declared.</div>
+</div>
+<div><code><b>picture_reference: </b></code>file name or index number of the picture stored in the library part. The index 0 refers to the preview picture of the library part. Pixel transparency is allowed in the picture.</div>
+<div>
+<div><code><b>frameFlag: </b></code>1 &#8211; frame is displayed, 0 &#8211; frame is not visible. Use this option to match the control to other User Interface items in style.</div>
+</div>
+<div>
+<div><code><b>x, y: </b></code>the position of the radio control (top left anchor).</div>
+</div>
+<div>
+<div><code><b>width, height: </b></code>width and height of the button in pixels. Image size is not declared individually: it should fit the button, as image is not stretched automatically to fit, and is centered on the button.</div>
+</div>
+<h3 id="UI_TEXTSTYLE_INFIELD_gdlcommand">UI_TEXTSTYLE_INFIELD</h3>
+<pre class="programlisting"><b id="UI_TEXTSTYLE_INFIELD_keyword">UI_TEXTSTYLE_INFIELD</b> name, faceCodeMask, x, y, 
+	buttonWidth, buttonHeight[, buttonOffsetX]</pre>
+<h3 id="UI_TEXTSTYLE_INFIELD2_gdlcommand">UI_TEXTSTYLE_INFIELD{2}</h3>
+<pre class="programlisting"><b id="UI_TEXTSTYLE_INFIELD2_keyword">UI_TEXTSTYLE_INFIELD{2}</b> "name", faceCodeMask, x, y, 
+	buttonWidth, buttonHeight[, buttonOffsetX]</pre>
+<p><span style="color: #009980;"><i><strong>Compatibility</strong>: introduced in ARCHICAD 22.</i></span><br/>
+Generates a row of puschcheckbuttons specifically used to set font style via an integer parameter, with similar appearance as seen in the general program interface. The format of the set value matches the input parameter of <a class="xref" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/?p=868#DEFINESTYLE_gdlcommand">the DEFINE STYLE command</a>. Both icons and tooltips are referenced from ARCHICAD itself, according to the localized version. The enabled buttons are displayed in a single-row arrangement.</p>
+<div><code><b>name: </b></code>parameter name or name as string expression for UI_TEXTSTYLE_INFIELD and parameter name as string expression (or text array indexed value) for UI_TEXTSTYLE_INFIELD{2}.</div>
+<div>
+<div><code><b>faceCodeMask: </b></code>this text is displayed on the button if no image is declared.</div>
+<div><code>j1: </code>bold,</div>
+<div><code>j2: </code>italic,</div>
+<div><code>j3: </code>underline,</div>
+<div><code>j6: </code>superscript,</div>
+<div><code>j7: </code>subscript,</div>
+<div><code>j8: </code>strikethrough.</div>
+<p>If faceCodeMask = 0, then all possible font style buttons are displayed. In case of an invalid <code>faceCodeMask</code>, &#8220;Check Script&#8221; returns with warning (&#8220;Invalid mask value used&#8221;).</p>
+</div>
+<div><code><b>x, y: </b></code>the position of the radio control (top left anchor).</div>
+<div>
+<div><code><b>buttonWidth, buttonHeight: </b></code>width and height of one button in pixels. Full width can be calculated by using the <code>faceCodeMask</code>, the <code>buttonWidth</code> and the <code>buttonOffsetX</code> values, if necessary.</div>
+</div>
+<div><code><b>buttonOffsetX: </b></code>distance between neighboring buttons in the row, in pixels. Automatic, if not set.</div>
+<p><a name="idm7976722848"></a></p>
+<h3 id="UI_LISTFIELD_gdlcommand">UI_LISTFIELD</h3>
+<pre class="programlisting"><b id="UI_LISTFIELD_keyword_2.12.5.20.4.1">UI_LISTFIELD</b> fieldID, x, y, width, height [, iconFlag [, description_header [, value_header]]]</pre>
+<p>Generates a control for the parameter input as a scrollable list containing an arbitrary number of rows, with the following columns:<br/>
+icon, description and input field for the parameter value.<br/>
+Lines of the list can be defined with the UI_LISTITEM command. UI_LISTFIELD and UI_LISTITEM definitions can be scripted in an arbitrary order.<br/>
+Empty listfields (with no list items) are not displayed.</p>
+<div>
+<div><code><b>fieldID: </b></code><br/>
+the unique identifier of the listfield. This ID also used in the UI_LISTITEM commands specifies the listfield the listitems belong to.<br/>
+Duplicates within a user interface script are not allowed.</div>
+</div>
+<div>
+<div><code><b>x, y: </b></code><br/>
+position of the listfield&#8217;s top left corner.</div>
+</div>
+<div>
+<div><code><b>width, height: </b></code><br/>
+width and height in pixels.</div>
+</div>
+<div>
+<div><code><b>iconFlag: </b></code></div>
+<p><code class="literal">iconFlag = 0:</code> icon column is not generated for this listfield.</p>
+<p><code class="literal">iconFlag = 1:</code> icon column is generated for this listfield (default value if not specified).</p>
+</div>
+<p>If the Custom Settings panel has only one control and this control is a listfield, the x, y, width, height parameters have no effect.<br/>
+In this case the width of the listfield equals to the width of the Custom Settings panel.</p>
+<div>
+<div><code><b>description_header: </b></code><br/>
+the title of the Description column.</div>
+</div>
+<div>
+<div><code><b>value_header: </b></code><br/>
+the title of the Value column.</div>
+</div>
+<p>If both description_header and value_header are empty strings or not specified, the listfield is generated without a header.<br/>
+If the strings contain at least one space, the listfield is generated with an empty header.</p>
+<h3 id="UI_LISTITEM_gdlcommand">UI_LISTITEM</h3>
+<pre class="programlisting"><b id="UI_LISTITEM_keyword_2.12.5.21.4.1">UI_LISTITEM</b> itemID, fieldID, "name" [, childFlag [, image [, paramDesc]]]</pre>
+<h3 id="UI_LISTITEM2_gdlcommand">UI_LISTITEM{2}</h3>
+<pre class="programlisting"><b id="UI_LISTITEM2_keyword_2.12.5.22.4.1">UI_LISTITEM{2}</b> itemID, fieldID, name [, childFlag [, image [, paramDesc]]]</pre>
+<p>Appends a listitem to the listfield defined by the fieldID parameter.</p>
+<div>
+<div><code><b>itemID: </b></code><br/>
+the unique identifier of the listitem. Listitems can be scripted in an arbitrary order and are sorted by itemID.<br/>
+Duplicate listitem IDs within a listfield are not allowed.</div>
+</div>
+<div>
+<div><code><b>fieldID: </b></code><br/>
+the unique identifier of the listfield containing this listitem.</div>
+</div>
+<div>
+<div><code><b>name: </b></code><br/>
+parameter name as string expression for UI_LISTITEM or parameter name with optional actual index values if array for UI_LISTITEM{2}.</div>
+</div>
+<div>
+<div><code><b>childFlag: </b></code></div>
+<p><code class="literal">childFlag = 0:</code> the listitem is a groupitem (default value if not specified).<br/>
+<code class="literal">childFlag = 1:</code> the listitem is a childitem. The parent item is the first groupitem above.</p>
+</div>
+<div>
+<div><code><b>image: </b></code><br/>
+file name or index number of the picture stored in the library part.<br/>
+If valid, it is displayed as an icon in the first column of the listfield in the associated listitem&#8217;s row.</div>
+</div>
+<div>
+<div><code><b>paramDesc: </b></code><br/>
+the visible name of the listitem in the Description column.<br/>
+If left empty, the description is automatically filled up from the parameter list description of the Library Part.<br/>
+If there is no description there, the name of the parameter is displayed instead.</div>
+</div>
+<p>If &#8220;name&#8221; string is empty, the listitem is a group with bold fonttype.<br/>
+If both &#8220;name&#8221; string and paramDesc are empty, the listitem is a separator.<br/>
+The HIDEPARAMETER command is ineffective for list items, the script should not add the item instead of using it.<br/>
+The LOCK command can be used and it is effective for list items.</p>
+<p>For a listfield it is recommended to define different itemIDs for different parameters, groups and separators.</p>
+<p>&nbsp;</p>
+<div class="example">
+<p><a name="idm7976722848"></a><a name="idm7976691392"></a></p>
+<p class="title"><b>Example:<br/>
+</b></p>
+<div class="example-contents">
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">! List with header without icon column
+
+ui_listfield 1, 10, 35, 432, 220, 0, "Description Header Text", "Value Header Text"
+
+ui_listitem 1, 1, "", 0, "", "Group Title 1" ! Group Line
+ui_listitem 2, 1, "A", 1
+ui_listitem 3, 1, "B", 1
+ui_listitem 4, 1, "ZZYZX", 1
+
+ui_listitem 5, 1, "" !separator
+ui_listitem 6, 1, "AC_show2DHotspotsIn3D", 0, "", "Group Title 2" ! Group Parameter Line
+ui_listitem 7, 1, "A", 1, "", "Custom Description A"
+ui_listitem 8, 1, "B", 1, "", "Custom Description B"
+ui_listitem 9, 1, "ZZYZX", 1, "", "Custom Description ZZYZX"</pre>
+<div><img decoding="async" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/NonGeom_uiListField.PNG" alt="https://gdl.graphisoft.com/wp-content/uploads/ac19-gdl/NonGeom_uiListField.PNG"/></div>
+</div>
+<p>&nbsp;</p>
+</div>
+<h3 id="UI_CUSTOM_POPUP_LISTITEM_gdlcommand">UI_CUSTOM_POPUP_LISTITEM</h3>
+<pre class="programlisting"><b>UI_CUSTOM_POPUP_LISTITEM</b> itemID, fieldID, "name", childFlag, image, paramDesc,
+        storeHiddenId, treeDepth,
+        groupingMethod, selectedValDescription
+        value1, value2, valuesArray1, .... valuen, valuesArrayn</pre>
+<h3 id="UI_CUSTOM_POPUP_LISTITEM2_gdlcommand">UI_CUSTOM_POPUP_LISTITEM{2}</h3>
+<p><span style="color: #009980;"><i><strong>Compatibility</strong>: introduced in ARCHICAD 20.</i></span></p>
+<pre class="programlisting"><b>UI_CUSTOM_POPUP_LISTITEM{2}</b> itemID, fieldID, "name", childFlag, image, paramDesc,
+        storeHiddenId, treeDepth,
+        groupingMethod, selectedValDescription
+        value1, value2, valuesArray1, .... valuen, valuesArrayn</pre>
+<p>Similar to the <a style="color: #529be5;" href="index.html#UI_CUSTOM_POPUP_INFIELD_gdlcommand">UI_CUSTOM_POPUP_INFIELD</a> and the <a style="color: #529be5;" href="index.html#UI_CUSTOM_POPUP_INFIELD2_gdlcommand">UI_CUSTOM_POPUP_INFIELD{2}</a>.<br/>
+Generates a listitem with popup for a value list of a parameter defined in the User Interface script to avoid using the Parameter script. For the parameter script restrictions see the <a style="color: #529be5;" href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/reference-guide/request-options">REQUEST Options</a>.</p>
+<div><code><b>itemID: </b></code>the unique identifier of the listitem. Listitems can be scripted in an arbitrary order and are sorted by itemID. Duplicate listitem IDs within a listfield are not allowed.</div>
+<div><code><b>fieldID: </b></code>the unique identifier of the listfield containing this listitem.</div>
+<div><code><b>name: </b></code>parameter name as string expression for UI_CUSTOM_POPUP_LISTITEM or parameter name with optional actual index values if array for UI_CUSTOM_POPUP_LISTITEM{2}.</div>
+<div><code><b>childFlag: </b></code><br/>
+<code>childFlag = 0: </code>the listitem is a groupitem (default value if not specified).<br/>
+<code>childFlag = 1: </code>the listitem is a childitem. The parent item is the first groupitem above.</div>
+<div><code><b>image: </b></code>ile name or index number of the picture stored in the library part. If valid, it is displayed as an icon in the first column of the listfield in the associated listitem&#8217;s row.</div>
+<div><code><b>paramDesc: </b></code>the visible name of the listitem in the Description column. If left empty, the description is automatically filled up from the parameter list description of the Library Part. If there is no description there, the name of the parameter is displayed instead.</div>
+<div><code><b>storeHiddenId, treeDepth: </b></code>to set up automatic or manual trees.<br/>
+<code>storeHiddenId = 0, treeDepth = 0: </code>works only with array parameters.<br/>
+The &#8220;treeDepth&#8221; parameter is set automatically by the second dimension (number of columns) of the array.<br/>
+<code>storeHiddenId = 1, treeDepth &gt; 0: </code>works only with single parameters.<br/>
+There must be <b>n * (1 + treeDepth)</b> values defined (first one for the stored ID and the rest for defining the custom tree).</div>
+<div><code><b>groupingMethod: </b></code>grouping method for sorting the tree.<br/>
+<code>1: </code>does not sort the groups and values under the same parent.<img decoding="async" class="aligncenter size-full wp-image-2405 imgborder" title="NonGeom_uiCustomPopupMethod1" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/NonGeom_uiCustomPopupMethod1.png" alt="NonGeom_uiCustomPopupMethod1"/><code>2: </code>sorts the groups and values under the same parent.</p>
+</div>
+<p><img decoding="async" class="aligncenter size-full wp-image-2406 imgborder" title="NonGeom_uiCustomPopupMethod2" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/NonGeom_uiCustomPopupMethod2.png" alt="NonGeom_uiCustomPopupMethod2"/></p>
+<div><code><b>selectedValDescription: </b></code>the text written in the field, if empty string the text will be the stored ID of the selected item.</div>
+<div><code><b>valuei, valuesArrayi: </b></code>define tree values one-by-one and/or with a one dimension array.</div>
+<p>&nbsp;</p>
+<p class="title"><b>Example:<br/>
+</b></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">UI_CUSTOM_POPUP_LISTITEM itemID, fieldID, "stParameterName", 0, "", "",
+    1, 3, 2, "",    ! storeHiddenId, treeDepth, groupingMethod, selectedValDescription
+    "hiddenID1",    "type1",    "group1",   "value1",
+    "hiddenID2",    "type1",    "group1",   "value2",
+    "hiddenID3",    "type2",    "group2",   "value1",
+    "hiddenID4",    "type2",    "group2",   "value2",
+    "hiddenID5",    "type2",    "",         "value3",
+    "hiddenID6",    "",         "",         "value4",
+    "hiddenID7",    "",         "",         "value5",
+</pre>
+<p><img decoding="async" class="aligncenter size-full wp-image-2407 imgborder" title="NonGeom_uiCustomPopupTree" src="https://web.archive.org/web/20250512053856im_/https://gdl.graphisoft.com/wp-content/uploads/NonGeom_uiCustomPopupTree.png" alt="NonGeom_uiCustomPopupTree"/><br/>
+<a name="idm7976691392"></a></p>
+<h3 id="UI_TOOLTIP_gdlcommand">UI_TOOLTIP</h3>
+<pre class="programlisting"><b id="UI_BUTTON_keyword_2.12.5.23.4.1">UI_BUTTON</b> type, text, x, y, width, height [, id [, url]] [ <b id="UI_TOOLTIP_keyword_2.12.5.23.4.3">UI_TOOLTIP</b> tooltiptext ]</pre>
+<pre class="programlisting"><b id="UI_PICT_BUTTON_keyword_2.12.5.23.6.1">UI_PICT_BUTTON</b> type, text, picture_reference,
+        x, y, width, height [, id [, url]] [ <b id="UI_TOOLTIP_keyword_2.12.5.23.6.3">UI_TOOLTIP</b> tooltiptext ]</pre>
+<pre class="programlisting"><b id="UI_INFIELD_keyword_2.12.5.23.8.1">UI_INFIELD</b> "name", x, y, width, height [, extra parameters ... ]
+        [ <b id="UI_TOOLTIP_keyword_2.12.5.23.8.3">UI_TOOLTIP</b> tooltiptext ]</pre>
+<pre class="programlisting"><b id="UI_INFIELD2_keyword_2.12.5.23.10.1">UI_INFIELD{2}</b> name, x, y, width, height [, extra parameters ... ]
+        [ <b id="UI_TOOLTIP_keyword_2.12.5.23.10.3">UI_TOOLTIP</b> tooltiptext ]</pre>
+<pre class="programlisting"><b id="UI_INFIELD3_keyword_2.12.5.23.12.1">UI_INFIELD{3}</b> name, x, y, width, height [, extra parameters ... ]
+        [ <b id="UI_TOOLTIP_keyword_2.12.5.23.12.3">UI_TOOLTIP</b> tooltiptext ]</pre>
+<pre class="programlisting"><b id="UI_INFIELD4_keyword_2.12.5.23.14.1">UI_INFIELD{4}</b> "name", x, y, width, height [, extra parameters ... ]
+        [ <b id="UI_TOOLTIP_keyword_2.12.5.23.14.3">UI_TOOLTIP</b> tooltiptext ]</pre>
+<pre class="programlisting"><b id="UI_RADIOBUTTON_keyword_2.12.5.23.16.1">UI_RADIOBUTTON</b> name, value, text, x, y, width, height [ <b id="UI_TOOLTIP_keyword_2.12.5.23.16.3">UI_TOOLTIP</b> tooltiptext ]</pre>
+<pre class="programlisting"><b id="UI_OUTFIELD_keyword_2.12.5.23.18.1">UI_OUTFIELD</b> expression, x, y, width, height [, flags] [ <b id="UI_TOOLTIP_keyword_2.12.5.23.18.3">UI_TOOLTIP</b> tooltiptext ]</pre>
+<pre class="programlisting"><b id="UI_PICT_keyword_2.12.5.23.20.1">UI_PICT</b> expression, x, y [, width, height [, mask]] [ <b id="UI_TOOLTIP_keyword_2.12.5.23.20.3">UI_TOOLTIP</b> tooltiptext ]</pre>
+<pre class="programlisting"><b id="UI_LISTFIELD_keyword_2.12.5.23.22.1">UI_LISTFIELD</b> fieldID, x, y, width, height [, iconFlag [, description_header [, value_header]]]
+        [ <b id="UI_TOOLTIP_keyword_2.12.5.23.22.3">UI_TOOLTIP</b> tooltiptext ]</pre>
+<pre class="programlisting"><b id="UI_LISTITEM_keyword_2.12.5.23.24.1">UI_LISTITEM</b> itemID, fieldID, "name" [, childFlag [, image [, paramDesc]]]
+        [ <b id="UI_TOOLTIP_keyword_2.12.5.23.24.3">UI_TOOLTIP</b> tooltiptext ]</pre>
+<pre class="programlisting"><b id="UI_LISTITEM2_keyword_2.12.5.23.26.1">UI_LISTITEM{2}</b> itemID, fieldID, "name" [, childFlag [, image [, paramDesc]]]
+        [ <b id="UI_TOOLTIP_keyword_2.12.5.23.26.3">UI_TOOLTIP</b> tooltiptext ]</pre>
+<p>Defines the tooltip for the control on the user interface page.<br/>
+Tooltips are available for buttons, infields, outfields, listfields, listitems and pictures<br/>
+if they are not disabled by the user in the running context (e.g., in the Help menu of ).</p>
+<p>The listfield&#8217;s tooltip appears in all included listitems if an item has none declared.<br/>
+The own tooltip of the listitem will take effect over the tooltip of the listfield (if existing) inline.</p>
+<div>
+<div><code><b>tooltiptext: </b></code>the text to display as tooltip for the control.</div>
+</div>
+<h3 id="UI_COLORPICKER_gdlcommand">UI_COLORPICKER</h3>
+<pre class="programlisting"><b id="UI_COLORPICKER_keyword_2.12.5.24.4.1">UI_COLORPICKER</b> "redParamName", "greenParamName", "blueParamName", x0, y0 [, width [, height]]</pre>
+<h3 id="UI_COLORPICKER2_gdlcommand">UI_COLORPICKER{2}</h3>
+<pre class="programlisting"><b id="UI_COLORPICKER2_keyword_2.12.5.25.4.1">UI_COLORPICKER{2}</b> redParamName, greenParamName, blueParamName, x0, y0 [, width [, height]]</pre>
+<p>Color picker dialog to set the r, g, b components of a color and store them into the given parameters. These values can later be used in the LIGHT command.</p>
+<div>
+<div><code><b>redParamName, greenParamName, blueParamName: </b></code><br/>
+parameter names as string expression for UI_COLORPICKER or parameter names with optional actual index values if array for UI_COLORPICKER{2}</div>
+</div>
+<div>
+<div><code><b>x0, y0: </b></code><br/>
+position of the color picker&#8217;s top left corner.</div>
+</div>
+<div>
+<div><code><b>width, height: </b></code><br/>
+width and height in pixels.</div>
+</div>
+<h3 id="UI_SLIDER_gdlcommand">UI_SLIDER</h3>
+<pre class="programlisting"><b id="UI_SLIDER_keyword_2.12.5.26.4.1">UI_SLIDER</b> "name", x0, y0, width, height [, nSegments [, sliderStyle]]</pre>
+<h3 id="UI_SLIDER2_gdlcommand">UI_SLIDER{2}</h3>
+<pre class="programlisting"><b id="UI_SLIDER2_keyword_2.12.5.27.4.1">UI_SLIDER{2}</b> name, x0, y0, width, height [, nSegments [, sliderStyle]]</pre>
+<p>Generates a slider control for an integer parameter defined with a range.<br/>
+For integer parameters with undefined range lower and upper limit values are -32768 (minimum signed short) and 32767 (maximum signed short).</p>
+<div>
+<div><code><b>name: </b></code>parameter name as string expression parameter or name with optional actual index values for UI_SLIDER{2}.</div>
+</div>
+<div>
+<div><code><b>x0, y0: </b></code>position of the slider.</div>
+</div>
+<div>
+<div><code><b>width, height: </b></code>slider width and height in pixels. If the width &gt; height the slider is horizontal, in the opposite case<br/>
+it is vertical.</div>
+</div>
+<div>
+<div><code><b>nSegments: </b></code>optional number of segments on the slider. If 0, no segments are displayed, if omitted or negative, the number<br/>
+of segments are calculated from the range upper and lower limit values and the step defined for the parameter.</div>
+</div>
+<div>
+<div><code><b>sliderStyle: </b></code>optional slider style (default is 0)</div>
+<div><code>0: </code>slider points to the bottom (horizontal sliders) or to the right (vertical sliders).</div>
+<div><code>1: </code>slider points to the top (horizontal sliders) or to the left (vertical sliders).</div>
+</div>
+	</div>
+
+
+
+	
+
+
+	<footer class="entry-footer">
+		
+		
+				
+			</footer>
+</article>				</div>
+
+				<div class="col-xs-12">
+								</div>
+			</div>
+		</div>
+	</div>
+</main>
+<!-- FOOTER RAW -->
+
+
+
+<footer class="layout">
+	<nav class="navbar navbar-menu-footer navbar-transparent">
+		<div class="container-fluid">
+			<div id="navbar" class="XXXcollapse XXXnavbar-collapse">
+				<ul class="nav navbar-nav navbar-left">
+					
+<li id="menu-item-3020" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3020"><a href="https://web.archive.org/web/20250512053856/https://gdl.graphisoft.com/about/">About GDL Center</a></li>
+					<li><a href="index.html#">&copy; 2025 GRAPHISOFT</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><span class="navbar-text">GRAPHISOFT is part of the <a target="_blank" href="https://web.archive.org/web/20250512053856/https://www.nemetschek.com/en/">Nemetschek&nbsp;Group</a></span></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</footer>
+
+
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/graphisoft-dev-theme\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+<script type="text/javascript" id="bbp-swap-no-js-body-class">
+	document.body.className = document.body.className.replace( 'bbp-no-js', 'bbp-js' );
+</script>
+
+	<script src="https://web.archive.org/web/20250512053856js_/https://gdl.graphisoft.com/wp-content/themes/graphisoft-dev-theme/assets/js/graphisoft-dev.min.js?ver=250418" type="text/javascript"></script>
+<script>
+
+
+(() => {
+    function runGSID() {
+        if (typeof GSIDSSO === "undefined") {
+            console.error("GSIDSSO not found");
+            return;
+        }
+
+        GSIDSSO.init("https://web.archive.org/web/20250512053856/https://graphisoftid.graphisoft.com/Account/SsoAuth");
+        
+        GSIDSSO.getAccessToken().then((accessToken) => {
+            if (!accessToken) {
+                return;
+            }
+
+            fetch("/auth/assert", {
+                method: "POST",
+                cache: "no-cache",
+                headers: {
+                    "Access-Token": accessToken,
+                    "Content-Type": "application/json",
+                },
+            })
+            .then(response => {
+                return response.json();
+            }).then(data => {
+                if (data.action && data.action === "reload") {
+                    window.location.replace(getURLWithoutParameter("accesstoken"));
+                }
+            });
+        });
+
+
+        const signOutLinks = document.querySelectorAll(`[href="/auth/signout"]`);
+        signOutLinks.forEach((link) => {
+            link.addEventListener("click", (event) => {
+                GSIDSSO.logout();
+            }, false);
+        });
+    }
+
+    function getURLWithoutParameter(key) {
+        const url = new URL(window.location.href);
+        url.searchParams.delete(key);
+        return url.toString();
+    }
+
+    document.addEventListener("DOMContentLoaded", runGSID);
+})();
+
+</script>
+
+
+<!-- GRAPHISOFT_Dev | 1.0.4 -->
+
+
+
+</body>
+</html><!--
+     FILE ARCHIVED ON 05:38:56 May 12, 2025 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:36:18 May 14, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  capture_cache.get: 2.002
+  load_resource: 82.912
+  PetaboxLoader3.resolve: 44.952
+  PetaboxLoader3.datanode: 36.33
+-->

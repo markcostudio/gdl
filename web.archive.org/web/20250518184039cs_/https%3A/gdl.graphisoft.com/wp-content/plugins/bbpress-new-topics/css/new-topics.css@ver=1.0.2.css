@@ -1,0 +1,29 @@
+.new-topic {}
+
+.new-topic-notifier {
+	display: inline;
+	padding: .2em .6em .3em;
+	font-size: 85%;
+	line-height: 1;
+	color: #ffffff;
+	background-color: #d9534f;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+}
+/*
+     FILE ARCHIVED ON 07:35:08 Apr 26, 2025 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:35:31 May 14, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.384
+  load_resource: 112.887
+  PetaboxLoader3.resolve: 86.478
+  PetaboxLoader3.datanode: 25.101
+*/
