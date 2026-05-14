@@ -8,7 +8,10 @@ web.archive.org/web/20250518184039im_/https%3A/gdl.graphisoft.com/wp-content/upl
 web.archive.org/web/20250518184039im_/https%3A/gdl.graphisoft.com/wp-content/uploads/GDLManual_ui_example1-300x207.png
 web.archive.org/web/20250518184039im_/https%3A/gdl.graphisoft.com/wp-content/uploads/Bounding_box_positiveDirection-300x170.png
 web.archive.org/web/20250518184039im_/https%3A/gdl.graphisoft.com/wp-content/uploads/FOP_LabelHotspots.png
+web.archive.org/web/20250518184039im_/https%3A/gdl.graphisoft.com/wp-content/uploads/NonGeom_uiCustomPopupTree.png
+web.archive.org/web/20250518184039im_/https%3A/gdl.graphisoft.com/wp-content/uploads/NonGeom_uiCustomPopupMethod1.png
 web.archive.org/web/20250518184039im_/https%3A/gdl.graphisoft.com/wp-content/uploads/Bounding_box_positiveDirection-768x436.png
+web.archive.org/web/20250518184039im_/https%3A/gdl.graphisoft.com/wp-content/uploads/NonGeom_uiCustomPopupMethod2.png
 web.archive.org/web/20250518184039im_/https%3A/gdl.graphisoft.com/wp-content/uploads/CPRISM3-1-256x251.png
 web.archive.org/web/20250518184039im_/https%3A/gdl.graphisoft.com/wp-content/uploads/GDLManual_uiPassive-300x72.png
 web.archive.org/web/20250518184039im_/https%3A/gdl.graphisoft.com/wp-content/uploads/CPRISM3-2-150x150.png
