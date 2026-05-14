@@ -2028,6 +2028,23 @@ ELBOW 2.5, 180, 1</pre>
 
 
 
+<!-- fallback collapse handler -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('[data-toggle="collapse"][href^="#"], [data-toggle="collapse"][href^="index.html#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var target = a.getAttribute('href').split('#')[1];
+      var el = document.getElementById(target);
+      if (el) {
+        e.preventDefault();
+        el.classList.toggle('in');
+      }
+    });
+  });
+});
+</script>
+
 </body>
 </html><!--
      FILE ARCHIVED ON 06:00:49 Oct 12, 2024 AND RETRIEVED FROM THE
