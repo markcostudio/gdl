@@ -347,7 +347,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/web.archive.org\/web\/2025061909
 		<pre><a name="REQUESTOptions_section"></a><code class="code">n = REQUEST (question_name, name_or_index, variable1 [, variable2, ...])</code> <code class="code">n = REQUEST{2} (question_name, name_or_index, name, variable1 [, variable2, ...])</code> <code class="code">n = REQUEST{3} (question_name, name, name_or_index_array, variable1 [, variable2, ...])</code> <code class="code">n = REQUEST{4} (question_name, name_or_index, index, name, variable1 [, variable2, ...])</code></pre>
 <p>The first parameter represents the question string while the second (or more) represents the object of the question (if it exists). The other parameters are variable names in which the return values (the answers) are stored.<br/>
 The function’s return value is the number of the answer (in the case of a badly formulated question or a nonexistent name, the value will be 0).</p>
-<p>ARCHICAD identifies the order and number of the input parameters by either the version of the <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/functions/index.htmlindex.html#REQUEST_gdlcommand">REQUEST command</a>, or the exact name (as string constant) of the request option. This means that using the first or both of the following options is the safest:</p>
+<p>ARCHICAD identifies the order and number of the input parameters by either the version of the <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/functions/index.html#REQUEST_gdlcommand">REQUEST command</a>, or the exact name (as string constant) of the request option. This means that using the first or both of the following options is the safest:</p>
 <ul>
 <li>name of the request is always a constant string</li>
 <li>version is added to the command</li>
@@ -1240,7 +1240,7 @@ endif
 <em style="color: #009980;"><span class="italic">Compatibility: length, area, volume and angle types are introduced in ARCHICAD 22.</span></em><br/>
 Returns value array of the selected property. Can be used only in labels.<br/>
 <em style="color: red;">Expression returns 0 and contains dummy return values (emtpy string or 0) if used in parameter script, causing additional warning.</em></p>
-<div><code><b>id: </b></code>(string) the ID of the selected property. For built-in property IDs see the section called <a href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/built-in-property-guide/index.htmlindex.html" target="_blank" rel="noopener">“Built-in Property Guide”</a>.</div>
+<div><code><b>id: </b></code>(string) the ID of the selected property. For built-in property IDs see the section called <a href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/built-in-property-guide/index.html" target="_blank" rel="noopener">“Built-in Property Guide”</a>.</div>
 <div><code><b>type: </b></code>the type of the selected property value.</div>
 <div><code>1: </code>boolean</div>
 <div><code>2: </code>integer</div>
@@ -1267,7 +1267,7 @@ Returns a value dictionary for the given property ID dictionary. Can be used onl
 <em style="color: red;">Expression returns 0 and contains dummy return values (empty string or 0) if used in parameter script or used with unknown input dictionary key, causing additional warning.</em></p>
 <div><code><b>propInputIds:</b></code> (dictionary) defining the selected property IDs.</div>
 <div><code><b>propInputIds.propertyIds[n]:</b></code>(array) contains a dictionary for each selected property ID.</div>
-<div><code><b>propInputIds.propertyIds[n].id:</b></code>(string) the ID of the selected property. For built-in property IDs see the section called <a href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/built-in-property-guide/index.htmlindex.html" target="_blank" rel="noopener">“Built-in Property Guide”</a></div>
+<div><code><b>propInputIds.propertyIds[n].id:</b></code>(string) the ID of the selected property. For built-in property IDs see the section called <a href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/built-in-property-guide/index.html" target="_blank" rel="noopener">“Built-in Property Guide”</a></div>
 <div><code><b>propOutputVals:</b></code> (dictionary) the property value data for the selected property IDs.</div>
 <div><code><b>propOutputVals.propertyValues[n]:</b></code>(array) contains dictionaries for each property value.</div>
 <div><code><b>propOutputVals.propertyValues[n].value_status:</b></code>(integer) the status of the selected property value</div>
@@ -1405,7 +1405,7 @@ Returns a value dictionary for the given component ID and property IDs. Can be u
 <div><code><b>compPropInput.componentId:</b></code> (dictionary) contains a dictionary for the selected building material component ID.</div>
 <div><code><b>compPropInput.componentId.id:</b></code> (integer) the selected building material component ID, available via the <a href="index.html#COMPONENT_IDS_OF_PARENT_request">&#8220;Component_IDs_Of_Parent&#8221; request</a>.</div>
 <div><code><b>compPropInput.propertyIds[n]:</b></code> (array) contains a dictionary for each selected property ID.</div>
-<div><code><b>compPropInput.propertyIds[n].id:</b></code> (string) the ID of the selected property. For built-in property IDs see the section called <a href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/built-in-property-guide/index.htmlindex.html" target="_blank" rel="noopener">“Built-in Property Guide”</a>.</div>
+<div><code><b>compPropInput.propertyIds[n].id:</b></code> (string) the ID of the selected property. For built-in property IDs see the section called <a href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/built-in-property-guide/index.html" target="_blank" rel="noopener">“Built-in Property Guide”</a>.</div>
 <div><code><b>compPropVals:</b></code> (dictionary) the building material component property value data for the selected property IDs.</div>
 <div><code><b>compPropVals.propertyValues[n]:</b></code>(array) contains dictionaries for each property value.</div>
 <div><code><b>compPropVals.propertyValues[n].value_status:</b></code>(integer) the status of the selected property value</div>
@@ -1453,7 +1453,7 @@ n = REQUEST ("Component_Property_Values_Of_Parent", compPropInput, compPropVals)
 <p><em style="color: #009980;">Compatibility: Introduced in ARCHICAD 20</em><br/>
 Returns the <b>type, group and name</b> of the selected property. Can be used only in labels.<br/>
 <em style="color: red;">Expression returns 0 and contains dummy return values (emtpy string or 0) if used in parameter script, causing additional warning.</em></p>
-<div><code><b>id: </b></code>the ID of the selected property (string). For built-in property IDs see the section called <a href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/built-in-property-guide/index.htmlindex.html" target="_blank" rel="noopener">“Built-in Property Guide”</a>.</div>
+<div><code><b>id: </b></code>the ID of the selected property (string). For built-in property IDs see the section called <a href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/built-in-property-guide/index.html" target="_blank" rel="noopener">“Built-in Property Guide”</a>.</div>
 <div><code><b>typeName: </b></code>the Type of the selected property (string).</div>
 <div><code>"IFC": </code>for IFC properties</div>
 <div><code>"": </code> other properties</div>
@@ -1758,7 +1758,7 @@ n = REQUEST{2} ("Building_Material_info", "Brick", "gs_bmat_physical_properties"
 <div><code>.floorPlanAndSection.showProjection: </code>(integer) show projection value: 1 &#8211; To Floor Plan Range, 2 &#8211; To Absolute Display Limit, 3 &#8211; Entire Element</div>
 <div><code>.overheadLine.linetype: </code>(integer) line type index of overhead line</div>
 <div><code>.overheadLine.pen: </code>(integer) pen index of overhead line</div>
-<div><i>See also <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/general-object-parameters/index.htmlindex.html#SYMB_VIEW_PEN_gdlglobal">SYMB_VIEW_PEN</a> and <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/general-object-parameters/index.htmlindex.html#SYMB_MAT_gdlglobal">SYMB_MAT</a> global variables for more attributes.</i></div>
+<div><i>See also <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/general-object-parameters/index.html#SYMB_VIEW_PEN_gdlglobal">SYMB_VIEW_PEN</a> and <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/general-object-parameters/index.html#SYMB_MAT_gdlglobal">SYMB_MAT</a> global variables for more attributes.</i></div>
 </div>
 <div class="example">
 <div class="example-contents">
@@ -1920,7 +1920,7 @@ COMPONENT "Volume", v, "m3"</pre>
 <p>Used in property script, first request the volume of the skin, then create a component using the returned value.</p>
 <h4 class="programlisting"><code class="code">n = REQUEST ("DateTime", format_string, datetimestring)</code></h4>
 <p>Returns the current date and time as a formatted string in datetimestring. Uses the DateTime Add-On, opening and closing the required channel.</p>
-<div><code><b>format_string: </b></code>Format string, described at <em><span class="italic">paramString</span></em> parameter of <a href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/gdl-datetime-add-on/index.htmlindex.html">“Opening Channel”</a>.</div>
+<div><code><b>format_string: </b></code>Format string, described at <em><span class="italic">paramString</span></em> parameter of <a href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/gdl-datetime-add-on/index.html">“Opening Channel”</a>.</div>
 <div><code><b>datetimestring: </b></code>The formatted string is returned in this variable</div>
 <p>The requests cause warning if used in parameter script.</p>
 <h3 id="ProfileRequestOptions">Keynote Requests</h3>
@@ -2066,7 +2066,7 @@ endif</code></pre>
 <div><code>"gs_profile_showoutline": </code> &#8220;Show Outline&#8221; setting of the component</div>
 <div><code>"gs_profile_outlinetype": </code> &#8220;Outline Type&#8221; setting of the component</div>
 <div><code>"gs_profile_outlinepen": </code> &#8220;Outline Pen&#8221; setting of the component</div>
-<p>Return attribute values can be used in any attribute related command, such as <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/drawing-elements/index.htmlindex.html#POLY2_B6_gdlcommand">the POLY2_B{6} command</a>, where contour sections of the polygon can be customized individually.</p>
+<p>Return attribute values can be used in any attribute related command, such as <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/drawing-elements/index.html#POLY2_B6_gdlcommand">the POLY2_B{6} command</a>, where contour sections of the polygon can be customized individually.</p>
 <p><em><span class="italic">Compatibility: introduced in ARCHICAD 21.</span></em></p>
 <pre class="programlisting"><code class="code">n = REQUEST{4} ("Profile_component_info", name_or_index, component_ind, param_name,
             value1, value2, ..., valuen)</code></pre>
@@ -2075,7 +2075,7 @@ endif</code></pre>
 <div><code>"gs_profile_comp_surfaces": </code> individual surface indexes of edges of the component</div>
 <div><code>"gs_profile_comp_pens": </code> individual pen indexes of edges of the component</div>
 <div><code>"gs_profile_comp_linetype": </code> individual linetype indexes of edges of the component</div>
-<div>Return attribute values can be used in any attribute related command, such as <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/drawing-elements/index.htmlindex.html#POLY2_B6_gdlcommand">the POLY2_B{6} command</a>, where contour sections of the polygon can be customized individually.</div>
+<div>Return attribute values can be used in any attribute related command, such as <a class="xref" href="/gdl/web.archive.org/web/20250518184039/https%253A/gdl.graphisoft.com/reference-guide/drawing-elements/index.html#POLY2_B6_gdlcommand">the POLY2_B{6} command</a>, where contour sections of the polygon can be customized individually.</div>
 <p><em><span class="italic">Compatibility: introduced in ARCHICAD 21.</span></em></p>
 <h3 id="CONSTRFILLDISPLAY_request">Deprecated requests</h3>
 <h4 class="programlisting"><code class="code">n = REQUEST ("Constr_Fills_display", "", optionVal)</code></h4>
